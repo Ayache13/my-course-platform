@@ -1,0 +1,61 @@
+﻿@page "/student/dashboard"
+@inject HttpClient Http
+@inject IJSRuntime JSRuntime
+@inject StudentService StudentService
+@using MyCourseApp.Shared.Dtos
+@using MyCourseApp.Web.Services
+
+
+<h3 class="text-center my-4">لوحة تحكم الطالب</h3>
+
+@if (student == null)
+{
+    <p class="text-center">جاري تحميل البيانات...</p>
+}
+else
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card text-white bg-primary">
+                    <div class="card-body">
+                        <h5 class="card-title">مرحبًا بك، @student.Name!</h5>
+                        <p class="card-text">ابدأ رحلتك التعليمية معنا.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        معلوماتك الشخصية
+                    </div>
+                    <div class="card-body">
+                        <p><strong>الاسم:</strong> @student.Name</p>
+                        <p><strong>البريد الإلكتروني:</strong> @student.Email</p>
+                        <p><strong>تاريخ التسجيل:</strong> @student.CreatedAt.ToShortDateString()</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a class="btn btn-success btn-lg" href="/courses">تصفح الدورات</a>
+        </div>
+    </div>
+}
+
+@code {
+    private StudentDto? student;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "jwtToken");
+
+        if (!string.IsNullOrEmpty(token))
+        {
+            student = await StudentService.GetStudentAsync();
+        }
+    }
+
+}

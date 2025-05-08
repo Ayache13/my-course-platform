@@ -1,0 +1,72 @@
+﻿@page "/courses"
+@inject CourseService CourseService
+@using MyCourseApp.Web.Models
+@using MyCourseApp.Web.Services
+@inject NavigationManager Navigation
+
+<h3 class="mb-4">جميع الدورات</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">حدث خطأ: @errorMessage</div>
+}
+else if (courses == null)
+{
+    <p>جاري تحميل الدورات...</p>
+}
+else
+{
+    <div class="row">
+        @foreach (var course in courses)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@course.Title</h5>
+                        <p class="card-text">@course.Description</p>
+                        <p class="card-text">
+                            <small class="text-muted">من @course.StartDate.ToShortDateString() إلى @course.EndDate.ToShortDateString()</small>
+                        </p>
+                        <span class="badge bg-success mb-2">التقييم: @course.Rate</span>
+                        <div class="mt-auto d-flex justify-content-between">
+                            <button class="btn btn-outline-primary btn-sm" @onclick="() => NavigateToDetails(course.Id)">
+                                عرض التفاصيل
+                            </button>
+                            <button class="btn btn-success btn-sm" @onclick="() => Register(course.Id)">
+                                تسجيل
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<Course>? courses;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            courses = await CourseService.GetAllCoursesAsync();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+    }
+
+    private void NavigateToDetails(int id)
+    {
+        Navigation.NavigateTo($"/course/{id}");
+    }
+
+    private void Register(int id)
+    {
+        // ستضيف هنا منطق التسجيل لاحقًا
+        Console.WriteLine($"تم التسجيل في الدورة {id}");
+    }
+}

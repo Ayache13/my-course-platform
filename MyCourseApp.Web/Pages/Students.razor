@@ -1,0 +1,42 @@
+﻿@page "/Students"
+@inject StudentService StudentService
+@using MyCourseApp.Web.Models
+@using MyCourseApp.Web.Services
+
+
+<h3 class="mb-4">الطلاب</h3>
+
+@if (studentsList == null)
+{
+    <p>جاري تحميل البيانات...</p>
+}
+else if (studentsList.Count == 0)
+{
+    <div class="alert alert-info">لا يوجد طلاب حالياً.</div>
+}
+else
+{
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var student in studentsList)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@student.Name</h5>
+                        <p class="card-text"><strong>البريد الإلكتروني:</strong> @student.Email</p>
+                        <p class="card-text"><strong>عدد الدورات:</strong> @student.StudentCourses?.Count ?? 0</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<Student>? studentsList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        studentsList = await StudentService.GetStudentsAsync();
+    }
+}

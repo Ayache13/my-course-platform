@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "FBIl8bYjS0ZlFdNdFlEdbIc62qQ7XtNbqNc8vCzGuVA=",
+  "Source": "MyCourseApp.SharedUI",
+  "BasePath": "_content/MyCourseApp.SharedUI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

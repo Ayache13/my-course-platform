@@ -1,0 +1,75 @@
+﻿@page "/course/{id:int}"
+@inject CourseService CourseService
+@inject NavigationManager Navigation
+@using MyCourseApp.Web.Models
+@using MyCourseApp.Web.Services
+
+<h3 class="mb-4">تفاصيل الدورة</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">حدث خطأ: @errorMessage</div>
+}
+else if (course == null)
+{
+    <p>جاري تحميل بيانات الدورة...</p>
+}
+else
+{
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+            <h4 class="card-title">@course.Title</h4>
+            <p class="card-text">@course.Description</p>
+            <ul class="list-unstyled">
+                <li><strong>تاريخ البدء:</strong> @course.StartDate.ToShortDateString()</li>
+                <li><strong>تاريخ الانتهاء:</strong> @course.EndDate.ToShortDateString()</li>
+                <li><strong>المدة:</strong> @(course.EndDate - course.StartDate).Days أيام</li>
+                <li><strong>التقييم:</strong> ⭐ @course.Rate</li>
+            </ul>
+            <button class="btn btn-secondary mt-3" @onclick="GoBackToCourses">
+                العودة إلى جميع الدورات
+            </button>
+
+
+
+        </div>
+    </div>
+}
+
+
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    private Course? course;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            course = await CourseService.GetCourseByIdAsync(id);
+            if (course == null)
+            {
+                errorMessage = "لم يتم العثور على الدورة المطلوبة.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+    }
+}
+@code {
+    void GoBackToCourses()
+    {
+        Navigation.NavigateTo("/courses");
+    }
+}
+
+<h3>CourseDetails</h3>
+
+@code {
+
+}

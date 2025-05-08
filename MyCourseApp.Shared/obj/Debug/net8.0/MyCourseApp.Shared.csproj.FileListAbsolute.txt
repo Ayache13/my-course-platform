@@ -1,0 +1,11 @@
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\bin\Debug\net8.0\MyCourseApp.Shared.deps.json
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\bin\Debug\net8.0\MyCourseApp.Shared.dll
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\bin\Debug\net8.0\MyCourseApp.Shared.pdb
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net8.0\MyCourseApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net8.0\MyCourseApp.Shared.AssemblyInfoInputs.cache
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net8.0\MyCourseApp.Shared.AssemblyInfo.cs
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net8.0\MyCourseApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net8.0\MyCourseApp.Shared.dll
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net8.0\refint\MyCourseApp.Shared.dll
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net8.0\MyCourseApp.Shared.pdb
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net8.0\ref\MyCourseApp.Shared.dll

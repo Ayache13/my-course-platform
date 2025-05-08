@@ -1,0 +1,42 @@
+﻿@page "/teachers"
+@inject TeacherService TeacherService
+@using MyCourseApp.Web.Models
+@using MyCourseApp.Web.Services
+
+
+<h3 class="mb-4">قائمة الأساتذة</h3>
+
+@if (teachers == null)
+{
+    <p>جاري تحميل البيانات...</p>
+}
+else if (!teachers.Any())
+{
+    <div class="alert alert-info">لا يوجد أساتذة حالياً.</div>
+}
+else
+{
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var teacher in teachers)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@teacher.FullName</h5>
+                        <p class="card-text"><strong>البريد الإلكتروني:</strong> @teacher.Email</p>
+                        <p class="card-text"><strong>عدد الدورات:</strong> @teacher.Courses?.Count ?? 0</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<Teacher>? teachers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        teachers = await TeacherService.GetAllTeachersAsync();
+    }
+}

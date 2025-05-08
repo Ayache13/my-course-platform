@@ -1,0 +1,43 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">MyCourseApp.Web</a>
+    </div>
+</nav>
+
+<div class="bg-light border-end" id="sidebar-wrapper" style="width: 250px; height: 100vh; position: fixed;">
+    <div class="list-group list-group-flush mt-3">
+        <NavLink class="list-group-item list-group-item-action" href="" Match="NavLinkMatch.All">
+            <i class="bi bi-house-door-fill me-2"></i> الصفحة الرئيسية
+        </NavLink>
+        <NavLink class="list-group-item list-group-item-action" href="counter">
+            <i class="bi bi-plus-square-fill me-2"></i> العداد
+        </NavLink>
+        <NavLink class="list-group-item list-group-item-action" href="weather">
+            <i class="bi bi-cloud-sun me-2"></i> الطقس
+        </NavLink>
+        <NavLink class="list-group-item list-group-item-action" href="courses">
+            <i class="bi bi-book-fill me-2"></i> الدورات
+        </NavLink>
+        <NavLink class="list-group-item list-group-item-action" href="teachers">
+            <i class="bi bi-person-badge-fill me-2"></i> الأساتذة
+        </NavLink>
+        <NavLink class="list-group-item list-group-item-action" href="students">
+            <i class="bi bi-people-fill me-2"></i> الطلاب
+        </NavLink>
+        <NavLink class="list-group-item list-group-item-action" href="add-course">
+            <i class="bi bi-plus-circle me-2"></i> إضافة دورة
+        </NavLink>
+    </div>
+</div>
+
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
