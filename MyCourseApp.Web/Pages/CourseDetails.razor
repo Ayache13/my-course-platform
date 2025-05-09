@@ -1,7 +1,7 @@
 ﻿@page "/course/{id:int}"
 @inject CourseService CourseService
 @inject NavigationManager Navigation
-@using MyCourseApp.Web.Models
+@using MyCourseApp.Shared.Dtos
 @using MyCourseApp.Web.Services
 
 <h3 class="mb-4">تفاصيل الدورة</h3>
@@ -42,7 +42,7 @@ else
     [Parameter]
     public int id { get; set; }
 
-    private Course? course;
+    private CourseDto? course;
     private string? errorMessage;
 
     protected override async Task OnInitializedAsync()

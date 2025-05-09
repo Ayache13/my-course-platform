@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0F3QhGshiElv4s+xUIU77CmGXOn7XqDqzytsgwIYku8=",
+  "Hash": "HgB9y51Q6V2bO22TQohZm0tHWDOVaxK2RrkC+3HHysI=",
   "Source": "MyCourseApp.Web",
   "BasePath": "/",
   "Mode": "Root",
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "2q4alg543q",
-      "Integrity": "avu6qM3OPj1Hu3z8Pb9QTsYpNJ0EVOf57/9ZFsYgTEc=",
+      "Fingerprint": "ws7t4thx97",
+      "Integrity": "QMtU04Ep/XWLQE109dOix31ahD8m/yI+u0UhwqT1a1A=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\blazor.boot.json"
@@ -1186,8 +1186,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "b43ynsuudh",
-      "Integrity": "SwsQTNYEta8/cafeTvuEYHUMORgCWHleYV51P3ccfyA=",
+      "Fingerprint": "jwm4lc423e",
+      "Integrity": "8/Fgc0uMW/VmcL1Yo0Ak7+z6VypoY7KIc3PRbd0CE00=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\bin\\Debug\\net8.0\\MyCourseApp.Shared.pdb"
@@ -1207,8 +1207,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "i46tvjri9n",
-      "Integrity": "vmAqOeyRiPKi1e9hexJcXtT2iVmAdqHPGqSTH8A19ag=",
+      "Fingerprint": "6deu5rklbf",
+      "Integrity": "OpWkyX0ttWFmxE48U2TxMOftUAh0eP4PHlmgw9W0juo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\webcil\\MyCourseApp.Shared.wasm"
@@ -1228,8 +1228,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "y5244uw957",
-      "Integrity": "CiD0AuPJiGeDNgPDywWbink+FjhAUA1OproHPUXoQ/Y=",
+      "Fingerprint": "pqugjmct9e",
+      "Integrity": "oQowgmPNldseLsJsfBY8BxFG4eAjP6cd2YBwe/RvIog=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\MyCourseApp.Web.pdb"
@@ -1249,8 +1249,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "bq6hs42jwz",
-      "Integrity": "rbfic92MrNWMm+zBx8kpoxU0BD6NIiURM+NWucUtLx8=",
+      "Fingerprint": "jehgw67xta",
+      "Integrity": "5ZsL6MSsT3il0kJelPF4EoJ2qm9JOqF+uaFBSRyJVjA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\webcil\\MyCourseApp.Web.wasm"
@@ -6338,7 +6338,7 @@
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.wasm"
     },
     {
-      "Identity": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\esuvjrjex3-b43ynsuudh.gz",
+      "Identity": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\esuvjrjex3-jwm4lc423e.gz",
       "SourceId": "MyCourseApp.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\",
@@ -6352,8 +6352,8 @@
       "RelatedAsset": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\MyCourseApp.Shared.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "m15zuuxza0",
-      "Integrity": "thU5y6MZhiPmiY6O+lhcLu7wl4YKBQeJaBJD1x3f4BA=",
+      "Fingerprint": "pehoqo3fho",
+      "Integrity": "3+fgThA6yTikEP02uEbaz+ELl5dfV8Z9C601Vg4pMGo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\MyCourseApp.Shared.pdb"
@@ -7724,7 +7724,7 @@
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js"
     },
     {
-      "Identity": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\owlp9ex6dn-bq6hs42jwz.gz",
+      "Identity": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\owlp9ex6dn-jehgw67xta.gz",
       "SourceId": "MyCourseApp.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\",
@@ -7738,8 +7738,8 @@
       "RelatedAsset": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\MyCourseApp.Web.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "2d4esvvyrb",
-      "Integrity": "lvW/zhDyx91Ty1n6x1uLKoH1UBnEdpHvyGL7OWvcTwk=",
+      "Fingerprint": "ozouoa4w3p",
+      "Integrity": "/GUNAd24/+O1Fyo6ESfAcYFGLGm65vaSzNhqWYEsfmE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\MyCourseApp.Web.wasm"
@@ -8333,7 +8333,7 @@
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.InteropServices.JavaScript.wasm"
     },
     {
-      "Identity": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\rvahi1ezfx-i46tvjri9n.gz",
+      "Identity": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\rvahi1ezfx-6deu5rklbf.gz",
       "SourceId": "MyCourseApp.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\",
@@ -8347,8 +8347,8 @@
       "RelatedAsset": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\MyCourseApp.Shared.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "1u5p5r93q3",
-      "Integrity": "yaq5pzv+NMJRusFGu9SpPyytAKVXD6IYpBedrL18tGI=",
+      "Fingerprint": "zvxcukj85c",
+      "Integrity": "jxTk3KwTSKk2mgkHZH/yMDfsYycA2t5hje/2ATTUPRc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\MyCourseApp.Shared.wasm"
@@ -8480,7 +8480,7 @@
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.IO.Compression.ZipFile.wasm"
     },
     {
-      "Identity": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\sx06ccuxw0-y5244uw957.gz",
+      "Identity": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\sx06ccuxw0-pqugjmct9e.gz",
       "SourceId": "MyCourseApp.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\",
@@ -8494,8 +8494,8 @@
       "RelatedAsset": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\MyCourseApp.Web.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "kxhm8fmpc2",
-      "Integrity": "uLcvKaUlyFaggj/L4wT+mdPClbZew5q+VTj3T8PDdEw=",
+      "Fingerprint": "h2vqi3qhl1",
+      "Integrity": "yT1jDvxfwg4+J1BKg32udyMtRwqv1QtouiKeE4ZUsTI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\MyCourseApp.Web.pdb"
@@ -8732,7 +8732,7 @@
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\mscorlib.wasm"
     },
     {
-      "Identity": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\uuxghzabby-2q4alg543q.gz",
+      "Identity": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\uuxghzabby-ws7t4thx97.gz",
       "SourceId": "MyCourseApp.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\",
@@ -8746,8 +8746,8 @@
       "RelatedAsset": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "uhhhyeffzf",
-      "Integrity": "0nwfH9cF05t3XyVG31RmTc96dO1BsCmd0bifu2XWXE8=",
+      "Fingerprint": "to7a4mwntv",
+      "Integrity": "k15VEAiHiI3jgLpoGL6iytBS6PtBlJr8epbWW4M5eA4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -9608,11 +9608,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"avu6qM3OPj1Hu3z8Pb9QTsYpNJ0EVOf57/9ZFsYgTEc=\""
+          "Value": "\"QMtU04Ep/XWLQE109dOix31ahD8m/yI+u0UhwqT1a1A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:29:31 GMT"
+          "Value": "Fri, 09 May 2025 20:37:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9622,18 +9622,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-avu6qM3OPj1Hu3z8Pb9QTsYpNJ0EVOf57/9ZFsYgTEc="
+          "Value": "sha256-QMtU04Ep/XWLQE109dOix31ahD8m/yI+u0UhwqT1a1A="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\uuxghzabby-2q4alg543q.gz",
+      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\uuxghzabby-ws7t4thx97.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000104580632"
+          "Quality": "0.000104602510"
         }
       ],
       "ResponseHeaders": [
@@ -9643,15 +9643,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9561"
+          "Value": "9559"
         },
         {
           "Name": "ETag",
-          "Value": "\"0nwfH9cF05t3XyVG31RmTc96dO1BsCmd0bifu2XWXE8=\""
+          "Value": "\"k15VEAiHiI3jgLpoGL6iytBS6PtBlJr8epbWW4M5eA4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:26:35 GMT"
+          "Value": "Fri, 09 May 2025 20:32:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9671,19 +9671,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"avu6qM3OPj1Hu3z8Pb9QTsYpNJ0EVOf57/9ZFsYgTEc=\""
+          "Value": "W/\"QMtU04Ep/XWLQE109dOix31ahD8m/yI+u0UhwqT1a1A=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-avu6qM3OPj1Hu3z8Pb9QTsYpNJ0EVOf57/9ZFsYgTEc="
+          "Value": "sha256-QMtU04Ep/XWLQE109dOix31ahD8m/yI+u0UhwqT1a1A="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\uuxghzabby-2q4alg543q.gz",
+      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\uuxghzabby-ws7t4thx97.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9692,7 +9692,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9561"
+          "Value": "9559"
         },
         {
           "Name": "Content-Type",
@@ -9700,11 +9700,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0nwfH9cF05t3XyVG31RmTc96dO1BsCmd0bifu2XWXE8=\""
+          "Value": "\"k15VEAiHiI3jgLpoGL6iytBS6PtBlJr8epbWW4M5eA4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:26:35 GMT"
+          "Value": "Fri, 09 May 2025 20:32:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9722,7 +9722,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0nwfH9cF05t3XyVG31RmTc96dO1BsCmd0bifu2XWXE8="
+          "Value": "sha256-k15VEAiHiI3jgLpoGL6iytBS6PtBlJr8epbWW4M5eA4="
         }
       ]
     },
@@ -16998,7 +16998,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11624"
+          "Value": "12828"
         },
         {
           "Name": "Content-Type",
@@ -17006,11 +17006,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SwsQTNYEta8/cafeTvuEYHUMORgCWHleYV51P3ccfyA=\""
+          "Value": "\"8/Fgc0uMW/VmcL1Yo0Ak7+z6VypoY7KIc3PRbd0CE00=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:26:28 GMT"
+          "Value": "Fri, 09 May 2025 19:18:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17020,18 +17020,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SwsQTNYEta8/cafeTvuEYHUMORgCWHleYV51P3ccfyA="
+          "Value": "sha256-8/Fgc0uMW/VmcL1Yo0Ak7+z6VypoY7KIc3PRbd0CE00="
         }
       ]
     },
     {
       "Route": "_framework/MyCourseApp.Shared.pdb",
-      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\esuvjrjex3-b43ynsuudh.gz",
+      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\esuvjrjex3-jwm4lc423e.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000151952591"
+          "Quality": "0.000139958013"
         }
       ],
       "ResponseHeaders": [
@@ -17041,15 +17041,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6580"
+          "Value": "7144"
         },
         {
           "Name": "ETag",
-          "Value": "\"thU5y6MZhiPmiY6O+lhcLu7wl4YKBQeJaBJD1x3f4BA=\""
+          "Value": "\"3+fgThA6yTikEP02uEbaz+ELl5dfV8Z9C601Vg4pMGo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:26:28 GMT"
+          "Value": "Fri, 09 May 2025 19:18:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17069,19 +17069,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SwsQTNYEta8/cafeTvuEYHUMORgCWHleYV51P3ccfyA=\""
+          "Value": "W/\"8/Fgc0uMW/VmcL1Yo0Ak7+z6VypoY7KIc3PRbd0CE00=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SwsQTNYEta8/cafeTvuEYHUMORgCWHleYV51P3ccfyA="
+          "Value": "sha256-8/Fgc0uMW/VmcL1Yo0Ak7+z6VypoY7KIc3PRbd0CE00="
         }
       ]
     },
     {
       "Route": "_framework/MyCourseApp.Shared.pdb.gz",
-      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\esuvjrjex3-b43ynsuudh.gz",
+      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\esuvjrjex3-jwm4lc423e.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -17090,7 +17090,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6580"
+          "Value": "7144"
         },
         {
           "Name": "Content-Type",
@@ -17098,11 +17098,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"thU5y6MZhiPmiY6O+lhcLu7wl4YKBQeJaBJD1x3f4BA=\""
+          "Value": "\"3+fgThA6yTikEP02uEbaz+ELl5dfV8Z9C601Vg4pMGo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:26:28 GMT"
+          "Value": "Fri, 09 May 2025 19:18:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17120,7 +17120,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-thU5y6MZhiPmiY6O+lhcLu7wl4YKBQeJaBJD1x3f4BA="
+          "Value": "sha256-3+fgThA6yTikEP02uEbaz+ELl5dfV8Z9C601Vg4pMGo="
         }
       ]
     },
@@ -17135,7 +17135,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6421"
+          "Value": "8469"
         },
         {
           "Name": "Content-Type",
@@ -17143,11 +17143,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vmAqOeyRiPKi1e9hexJcXtT2iVmAdqHPGqSTH8A19ag=\""
+          "Value": "\"OpWkyX0ttWFmxE48U2TxMOftUAh0eP4PHlmgw9W0juo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:26:35 GMT"
+          "Value": "Fri, 09 May 2025 19:18:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17157,18 +17157,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vmAqOeyRiPKi1e9hexJcXtT2iVmAdqHPGqSTH8A19ag="
+          "Value": "sha256-OpWkyX0ttWFmxE48U2TxMOftUAh0eP4PHlmgw9W0juo="
         }
       ]
     },
     {
       "Route": "_framework/MyCourseApp.Shared.wasm",
-      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\rvahi1ezfx-i46tvjri9n.gz",
+      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\rvahi1ezfx-6deu5rklbf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000414593698"
+          "Quality": "0.000296208531"
         }
       ],
       "ResponseHeaders": [
@@ -17178,15 +17178,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2411"
+          "Value": "3375"
         },
         {
           "Name": "ETag",
-          "Value": "\"yaq5pzv+NMJRusFGu9SpPyytAKVXD6IYpBedrL18tGI=\""
+          "Value": "\"jxTk3KwTSKk2mgkHZH/yMDfsYycA2t5hje/2ATTUPRc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:26:35 GMT"
+          "Value": "Fri, 09 May 2025 19:18:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17206,19 +17206,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"vmAqOeyRiPKi1e9hexJcXtT2iVmAdqHPGqSTH8A19ag=\""
+          "Value": "W/\"OpWkyX0ttWFmxE48U2TxMOftUAh0eP4PHlmgw9W0juo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vmAqOeyRiPKi1e9hexJcXtT2iVmAdqHPGqSTH8A19ag="
+          "Value": "sha256-OpWkyX0ttWFmxE48U2TxMOftUAh0eP4PHlmgw9W0juo="
         }
       ]
     },
     {
       "Route": "_framework/MyCourseApp.Shared.wasm.gz",
-      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\rvahi1ezfx-i46tvjri9n.gz",
+      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\rvahi1ezfx-6deu5rklbf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -17227,7 +17227,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2411"
+          "Value": "3375"
         },
         {
           "Name": "Content-Type",
@@ -17235,11 +17235,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yaq5pzv+NMJRusFGu9SpPyytAKVXD6IYpBedrL18tGI=\""
+          "Value": "\"jxTk3KwTSKk2mgkHZH/yMDfsYycA2t5hje/2ATTUPRc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:26:35 GMT"
+          "Value": "Fri, 09 May 2025 19:18:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17257,7 +17257,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yaq5pzv+NMJRusFGu9SpPyytAKVXD6IYpBedrL18tGI="
+          "Value": "sha256-jxTk3KwTSKk2mgkHZH/yMDfsYycA2t5hje/2ATTUPRc="
         }
       ]
     },
@@ -17272,7 +17272,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "57004"
+          "Value": "66620"
         },
         {
           "Name": "Content-Type",
@@ -17280,11 +17280,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CiD0AuPJiGeDNgPDywWbink+FjhAUA1OproHPUXoQ/Y=\""
+          "Value": "\"oQowgmPNldseLsJsfBY8BxFG4eAjP6cd2YBwe/RvIog=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:29:31 GMT"
+          "Value": "Fri, 09 May 2025 20:37:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17294,18 +17294,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CiD0AuPJiGeDNgPDywWbink+FjhAUA1OproHPUXoQ/Y="
+          "Value": "sha256-oQowgmPNldseLsJsfBY8BxFG4eAjP6cd2YBwe/RvIog="
         }
       ]
     },
     {
       "Route": "_framework/MyCourseApp.Web.pdb",
-      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\sx06ccuxw0-y5244uw957.gz",
+      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\sx06ccuxw0-pqugjmct9e.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000023391266"
+          "Quality": "0.000019894955"
         }
       ],
       "ResponseHeaders": [
@@ -17315,15 +17315,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "42750"
+          "Value": "50263"
         },
         {
           "Name": "ETag",
-          "Value": "\"uLcvKaUlyFaggj/L4wT+mdPClbZew5q+VTj3T8PDdEw=\""
+          "Value": "\"yT1jDvxfwg4+J1BKg32udyMtRwqv1QtouiKeE4ZUsTI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:26:34 GMT"
+          "Value": "Fri, 09 May 2025 20:32:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17343,19 +17343,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"CiD0AuPJiGeDNgPDywWbink+FjhAUA1OproHPUXoQ/Y=\""
+          "Value": "W/\"oQowgmPNldseLsJsfBY8BxFG4eAjP6cd2YBwe/RvIog=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CiD0AuPJiGeDNgPDywWbink+FjhAUA1OproHPUXoQ/Y="
+          "Value": "sha256-oQowgmPNldseLsJsfBY8BxFG4eAjP6cd2YBwe/RvIog="
         }
       ]
     },
     {
       "Route": "_framework/MyCourseApp.Web.pdb.gz",
-      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\sx06ccuxw0-y5244uw957.gz",
+      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\sx06ccuxw0-pqugjmct9e.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -17364,7 +17364,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "42750"
+          "Value": "50263"
         },
         {
           "Name": "Content-Type",
@@ -17372,11 +17372,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uLcvKaUlyFaggj/L4wT+mdPClbZew5q+VTj3T8PDdEw=\""
+          "Value": "\"yT1jDvxfwg4+J1BKg32udyMtRwqv1QtouiKeE4ZUsTI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:26:34 GMT"
+          "Value": "Fri, 09 May 2025 20:32:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17394,7 +17394,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uLcvKaUlyFaggj/L4wT+mdPClbZew5q+VTj3T8PDdEw="
+          "Value": "sha256-yT1jDvxfwg4+J1BKg32udyMtRwqv1QtouiKeE4ZUsTI="
         }
       ]
     },
@@ -17409,7 +17409,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "73493"
+          "Value": "88341"
         },
         {
           "Name": "Content-Type",
@@ -17417,11 +17417,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rbfic92MrNWMm+zBx8kpoxU0BD6NIiURM+NWucUtLx8=\""
+          "Value": "\"5ZsL6MSsT3il0kJelPF4EoJ2qm9JOqF+uaFBSRyJVjA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:29:31 GMT"
+          "Value": "Fri, 09 May 2025 20:37:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17431,18 +17431,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rbfic92MrNWMm+zBx8kpoxU0BD6NIiURM+NWucUtLx8="
+          "Value": "sha256-5ZsL6MSsT3il0kJelPF4EoJ2qm9JOqF+uaFBSRyJVjA="
         }
       ]
     },
     {
       "Route": "_framework/MyCourseApp.Web.wasm",
-      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\owlp9ex6dn-bq6hs42jwz.gz",
+      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\owlp9ex6dn-jehgw67xta.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000035789700"
+          "Quality": "0.000030514784"
         }
       ],
       "ResponseHeaders": [
@@ -17452,15 +17452,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27940"
+          "Value": "32770"
         },
         {
           "Name": "ETag",
-          "Value": "\"lvW/zhDyx91Ty1n6x1uLKoH1UBnEdpHvyGL7OWvcTwk=\""
+          "Value": "\"/GUNAd24/+O1Fyo6ESfAcYFGLGm65vaSzNhqWYEsfmE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:26:35 GMT"
+          "Value": "Fri, 09 May 2025 20:32:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17480,19 +17480,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"rbfic92MrNWMm+zBx8kpoxU0BD6NIiURM+NWucUtLx8=\""
+          "Value": "W/\"5ZsL6MSsT3il0kJelPF4EoJ2qm9JOqF+uaFBSRyJVjA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rbfic92MrNWMm+zBx8kpoxU0BD6NIiURM+NWucUtLx8="
+          "Value": "sha256-5ZsL6MSsT3il0kJelPF4EoJ2qm9JOqF+uaFBSRyJVjA="
         }
       ]
     },
     {
       "Route": "_framework/MyCourseApp.Web.wasm.gz",
-      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\owlp9ex6dn-bq6hs42jwz.gz",
+      "AssetFile": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\obj\\Debug\\net8.0\\compressed\\owlp9ex6dn-jehgw67xta.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -17501,7 +17501,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27940"
+          "Value": "32770"
         },
         {
           "Name": "Content-Type",
@@ -17509,11 +17509,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lvW/zhDyx91Ty1n6x1uLKoH1UBnEdpHvyGL7OWvcTwk=\""
+          "Value": "\"/GUNAd24/+O1Fyo6ESfAcYFGLGm65vaSzNhqWYEsfmE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 21:26:35 GMT"
+          "Value": "Fri, 09 May 2025 20:32:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17531,7 +17531,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lvW/zhDyx91Ty1n6x1uLKoH1UBnEdpHvyGL7OWvcTwk="
+          "Value": "sha256-/GUNAd24/+O1Fyo6ESfAcYFGLGm65vaSzNhqWYEsfmE="
         }
       ]
     },

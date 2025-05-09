@@ -69,33 +69,23 @@
   },
   {
     "ContainingType": "CoursesPlatform.Api.Controllers.CoursesController",
-    "Method": "CreateCourse",
+    "Method": "AddCourse",
     "RelativePath": "api/Courses",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "course",
-        "Type": "CoursesPlatform.Api.Models.Course",
+        "Name": "courseDto",
+        "Type": "MyCourseApp.Shared.Dtos.CourseDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "CoursesPlatform.Api.Models.Course",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "CoursesPlatform.Api.Controllers.CoursesController",
-    "Method": "GetCourse",
+    "Method": "GetCourseById",
     "RelativePath": "api/Courses/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -109,7 +99,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CoursesPlatform.Api.Models.Course",
+        "Type": "MyCourseApp.Shared.Dtos.CourseDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -121,27 +111,6 @@
   },
   {
     "ContainingType": "CoursesPlatform.Api.Controllers.CoursesController",
-    "Method": "UpdateCourse",
-    "RelativePath": "api/Courses/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "course",
-        "Type": "CoursesPlatform.Api.Models.Course",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CoursesPlatform.Api.Controllers.CoursesController",
     "Method": "DeleteCourse",
     "RelativePath": "api/Courses/{id}",
     "HttpMethod": "DELETE",
@@ -150,6 +119,68 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoursesPlatform.Api.Controllers.CoursesController",
+    "Method": "GetMyCourses",
+    "RelativePath": "api/Courses/my",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoursesPlatform.Api.Controllers.CoursesController",
+    "Method": "GetMyTeacherCourses",
+    "RelativePath": "api/Courses/my-teacher",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MyCourseApp.Shared.Dtos.CourseDto, MyCourseApp.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CoursesPlatform.Api.Controllers.CoursesController",
+    "Method": "RegisterToCourse",
+    "RelativePath": "api/Courses/register/{courseId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoursesPlatform.Api.Controllers.CoursesController",
+    "Method": "UnsubscribeFromCourse",
+    "RelativePath": "api/Courses/unsubscribe/{courseId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -435,6 +466,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoursesPlatform.Api.Controllers.TeachersController",
+    "Method": "GetTeacherInfo",
+    "RelativePath": "api/Teachers/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

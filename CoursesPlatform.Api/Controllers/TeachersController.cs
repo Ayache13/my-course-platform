@@ -2,6 +2,9 @@
 using CoursesPlatform.Api.Models;
 using CoursesPlatform.Api.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using MyCourseApp.Shared.Dtos;
+using System.Security.Claims;
 
 namespace CoursesPlatform.Api.Controllers
 {
@@ -77,6 +80,32 @@ namespace CoursesPlatform.Api.Controllers
 
             return NoContent();
         }
+
+        [HttpGet("me")]
+        [Authorize(Roles = "Teacher")]
+        public async Task<IActionResult> GetTeacherInfo()
+        {
+            var email = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+
+            if (string.IsNullOrEmpty(email))
+                return Unauthorized();
+
+            var teacher = await _context.Teachers
+                .Where(t => t.Email == email)
+                .Select(t => new TeacherDto
+                {
+                    FullName = t.FullName,
+                    Email = t.Email
+                    // يمكنك لاحقًا إضافة Biography أو Specialization هنا
+                })
+                .FirstOrDefaultAsync();
+
+            if (teacher == null)
+                return NotFound();
+
+            return Ok(teacher);
+        }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTeacher(int id)

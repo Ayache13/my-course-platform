@@ -143,41 +143,24 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Course"
+                "$ref": "#/components/schemas/CourseDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Course"
+                "$ref": "#/components/schemas/CourseDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Course"
+                "$ref": "#/components/schemas/CourseDto"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Course"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Course"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Course"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -204,24 +187,24 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Course"
+                  "$ref": "#/components/schemas/CourseDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Course"
+                  "$ref": "#/components/schemas/CourseDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Course"
+                  "$ref": "#/components/schemas/CourseDto"
                 }
               }
             }
           }
         }
       },
-      "put": {
+      "delete": {
         "tags": [
           "Courses"
         ],
@@ -236,38 +219,94 @@
             }
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Course"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Course"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Course"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Courses/register/{courseId}": {
+      "post": {
+        "tags": [
+          "Courses"
+        ],
+        "parameters": [
+          {
+            "name": "courseId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Courses/my": {
+      "get": {
+        "tags": [
+          "Courses"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Courses/my-teacher": {
+      "get": {
+        "tags": [
+          "Courses"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CourseDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CourseDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CourseDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Courses/unsubscribe/{courseId}": {
       "delete": {
         "tags": [
           "Courses"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "courseId",
             "in": "path",
             "required": true,
             "schema": {
@@ -740,6 +779,18 @@
           }
         }
       }
+    },
+    "/api/Teachers/me": {
+      "get": {
+        "tags": [
+          "Teachers"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -787,6 +838,36 @@
               "$ref": "#/components/schemas/StudentCourse"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CourseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "rate": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

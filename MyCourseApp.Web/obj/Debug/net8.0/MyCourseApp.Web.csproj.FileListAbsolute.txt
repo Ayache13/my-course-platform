@@ -1116,8 +1116,9 @@ C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0
 C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\refint\MyCourseApp.Web.dll
 C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\MyCourseApp.Web.pdb
 C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\ref\MyCourseApp.Web.dll
-C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\compressed\rvahi1ezfx-i46tvjri9n.gz
-C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\compressed\esuvjrjex3-b43ynsuudh.gz
-C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\compressed\owlp9ex6dn-bq6hs42jwz.gz
-C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\compressed\sx06ccuxw0-y5244uw957.gz
-C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\compressed\uuxghzabby-2q4alg543q.gz
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\MyCourseApp.Web.sourcelink.json
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\compressed\rvahi1ezfx-6deu5rklbf.gz
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\compressed\esuvjrjex3-jwm4lc423e.gz
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\compressed\owlp9ex6dn-jehgw67xta.gz
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\compressed\sx06ccuxw0-pqugjmct9e.gz
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Web\obj\Debug\net8.0\compressed\uuxghzabby-ws7t4thx97.gz

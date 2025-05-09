@@ -9,3 +9,4 @@ C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net
 C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net8.0\refint\MyCourseApp.Shared.dll
 C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net8.0\MyCourseApp.Shared.pdb
 C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net8.0\ref\MyCourseApp.Shared.dll
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\MyCourseApp.Shared\obj\Debug\net8.0\MyCourseApp.Shared.sourcelink.json

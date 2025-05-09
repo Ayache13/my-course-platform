@@ -1,0 +1,48 @@
+﻿@page "/teacher/my-courses"
+@inject CourseService CourseService
+@using MyCourseApp.Shared.Dtos
+@using MyCourseApp.Web.Services
+
+<h3 class="mb-4">دوراتي</h3>
+
+@if (courses == null)
+{
+    <p>جاري تحميل الدورات...</p>
+}
+else if (!courses.Any())
+{
+    <p>لم تقم بإنشاء أي دورات بعد.</p>
+}
+else
+{
+    <div class="row">
+        @foreach (var course in courses)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">@course.Title</h5>
+                        <p class="card-text">@course.Description</p>
+                        <a href="/edit-course/@course.Id" class="btn btn-primary btn-sm">تعديل</a>
+                        <button class="btn btn-danger btn-sm ms-2" @onclick="() => DeleteCourse(course.Id)">حذف</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<CourseDto>? courses;
+
+    protected override async Task OnInitializedAsync()
+    {
+        courses = await CourseService.GetCoursesByCurrentTeacherAsync();
+    }
+
+    private async Task DeleteCourse(int courseId)
+    {
+        await CourseService.DeleteCourseAsync(courseId);
+        courses = await CourseService.GetCoursesByCurrentTeacherAsync();
+    }
+}

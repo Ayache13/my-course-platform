@@ -1,0 +1,43 @@
+﻿@page "/student/my-courses"
+@inject CourseService CourseService
+@inject NavigationManager Navigation
+@using MyCourseApp.Web.Models
+@using MyCourseApp.Web.Services
+
+<h3>دوراتي المسجلة</h3>
+
+@if (courses == null)
+{
+    <p>جاري تحميل البيانات...</p>
+}
+else if (!courses.Any())
+{
+    <p>لم تقم بالتسجيل في أي دورة حتى الآن.</p>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var course in courses)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>@course.Title</span>
+                <button class="btn btn-danger btn-sm" @onclick="() => Unsubscribe(course.Id)">إلغاء الاشتراك</button>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private List<Course> courses = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        courses = await CourseService.GetMyCoursesAsync();
+    }
+
+    private async Task Unsubscribe(int courseId)
+    {
+        await CourseService.UnsubscribeFromCourseAsync(courseId);
+        courses = await CourseService.GetMyCoursesAsync(); 
+    }
+}

@@ -52,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/AYACHE REDOUANE/source/repos/TutorLink/MyCourseApp.Web/Pages/MyCourses.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlDb3Vyc2VzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/AYACHE REDOUANE/source/repos/TutorLink/MyCourseApp.Web/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -68,8 +72,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudERhc2hib2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/AYACHE REDOUANE/source/repos/TutorLink/MyCourseApp.Web/Pages/StudentMyCourses.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudE15Q291cnNlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/AYACHE REDOUANE/source/repos/TutorLink/MyCourseApp.Web/Pages/Students.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AYACHE REDOUANE/source/repos/TutorLink/MyCourseApp.Web/Pages/TeacherDashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlckRhc2hib2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/AYACHE REDOUANE/source/repos/TutorLink/MyCourseApp.Web/Pages/Teachers.razor]

@@ -1,41 +1,47 @@
 ﻿@page "/add-course"
+@inject NavigationManager Navigation
+@using MyCourseApp.Shared.Dtos
 @using MyCourseApp.Web.Models
 @using MyCourseApp.Web.Services
 @inject CourseService CourseService
 
-<h3>Add a New Course</h3>
+
+<h3>إضافة دورة جديدة</h3>
 
 <EditForm Model="@course" OnValidSubmit="HandleSubmit">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
     <div class="form-group">
-        <label for="courseTitle">Course Title</label>
-        <InputText id="courseTitle" class="form-control" @bind-Value="course.Title" />
+        <label>عنوان الدورة:</label>
+        <InputText class="form-control" @bind-Value="course.Title" />
     </div>
 
     <div class="form-group">
-        <label for="courseDescription">Course Description</label>
-        <InputText id="courseDescription" class="form-control" @bind-Value="course.Description" />
+        <label>وصف الدورة:</label>
+        <InputText class="form-control" @bind-Value="course.Description" />
     </div>
-
 
     <div class="form-group">
-        <label for="courseTeacher">Teacher Id</label>
-        <InputNumber id="courseTeacher" class="form-control" @bind-Value="course.TeacherId" TValue="int" />
+        <label>تاريخ البداية:</label>
+        <InputDate class="form-control" @bind-Value="course.StartDate" />
     </div>
 
-    <button type="submit" class="btn btn-primary">Add Course</button>
+    <div class="form-group">
+        <label>تاريخ النهاية:</label>
+        <InputDate class="form-control" @bind-Value="course.EndDate" />
+    </div>
+
+    <button type="submit" class="btn btn-success">إضافة</button>
 </EditForm>
 
-
-
 @code {
-    private Course course = new Course();
+    private CourseDto course = new();
 
     private async Task HandleSubmit()
     {
         await CourseService.AddCourseAsync(course);
-        // Optionally, show a message or redirect after successful submission
+        Navigation.NavigateTo("/teacher/dashboard"); 
     }
 }
+

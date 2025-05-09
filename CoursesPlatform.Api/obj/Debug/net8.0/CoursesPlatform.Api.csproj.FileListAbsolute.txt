@@ -149,3 +149,4 @@ C:\Users\AYACHE REDOUANE\source\repos\TutorLink\CoursesPlatform.Api\obj\Debug\ne
 C:\Users\AYACHE REDOUANE\source\repos\TutorLink\CoursesPlatform.Api\obj\Debug\net8.0\CoursesPlatform.Api.pdb
 C:\Users\AYACHE REDOUANE\source\repos\TutorLink\CoursesPlatform.Api\obj\Debug\net8.0\CoursesPlatform.Api.genruntimeconfig.cache
 C:\Users\AYACHE REDOUANE\source\repos\TutorLink\CoursesPlatform.Api\obj\Debug\net8.0\ref\CoursesPlatform.Api.dll
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\CoursesPlatform.Api\obj\Debug\net8.0\CoursesPlatform.Api.sourcelink.json
