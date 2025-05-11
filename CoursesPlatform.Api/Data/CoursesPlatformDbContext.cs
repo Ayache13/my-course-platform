@@ -46,13 +46,9 @@ namespace CoursesPlatform.Api.Data
                 .OnDelete(DeleteBehavior.Restrict);
             modelBuilder.Entity<Teacher>()
                 .HasOne(t => t.User)
-                .WithOne() // لا حاجة لـ Navigation عكسية إن لم تكن تحتاجها
+                .WithOne() 
                 .HasForeignKey<Teacher>(t => t.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
-
         }
-
-
-
     }
 }

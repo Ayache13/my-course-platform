@@ -299,3 +299,4 @@ C:\Users\AYACHE REDOUANE\source\repos\TutorLink\TutorLink\obj\Debug\net8.0-macca
 C:\Users\AYACHE REDOUANE\source\repos\TutorLink\TutorLink\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\TutorLink.pdb
 C:\Users\AYACHE REDOUANE\source\repos\TutorLink\TutorLink\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\TutorLink.genruntimeconfig.cache
 C:\Users\AYACHE REDOUANE\source\repos\TutorLink\TutorLink\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\TutorLink.dll
+C:\Users\AYACHE REDOUANE\source\repos\TutorLink\TutorLink\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\TutorLink.sourcelink.json

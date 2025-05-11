@@ -241,6 +241,28 @@ namespace CoursesPlatform.Api.Controllers
         }
 
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCourse(int id, CourseDto courseDto)
+        {
+            if (id != courseDto.Id)
+                return BadRequest();
+
+            var course = await _context.Courses.FindAsync(id);
+            if (course == null)
+                return NotFound();
+
+            // تحديث القيم من DTO
+            course.Title = courseDto.Title;
+            course.Description = courseDto.Description;
+            course.StartDate = courseDto.StartDate;
+            course.EndDate = courseDto.EndDate;
+            course.Rate = courseDto.Rate;
+
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
+
 
         // DELETE: api/courses/5
         [HttpDelete("{id}")]
@@ -248,13 +270,13 @@ namespace CoursesPlatform.Api.Controllers
         public async Task<IActionResult> DeleteCourse(int id)
         {
             var course = await _context.Courses
-                .Include(c => c.StudentCourses) // Include العلاقات المرتبطة
+                .Include(c => c.StudentCourses) // Include 
                 .FirstOrDefaultAsync(c => c.Id == id);
 
             if (course == null)
                 return NotFound();
 
-            // حذف العلاقات المرتبطة أولاً
+           
             _context.StudentCourses.RemoveRange(course.StudentCourses);
 
             _context.Courses.Remove(course);
@@ -262,8 +284,6 @@ namespace CoursesPlatform.Api.Controllers
 
             return NoContent();
         }
-
-
 
     }
 }

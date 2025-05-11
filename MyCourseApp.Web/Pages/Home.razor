@@ -1,7 +1,292 @@
 ﻿@page "/"
+@inject NavigationManager Navigation
 
-<PageTitle>Home</PageTitle>
+<PageTitle>الصفحة الرئيسية | MyCourseApp</PageTitle>
 
-<h1>Hello, world!</h1>
+<!-- Hero Section -->
+<section class="hero-section bg-light py-5">
+    <div class="container py-4">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-4 fw-bold mb-4 text-primary">
+                    <span class="d-block">مرحبًا بك في</span>
+                    <span class="d-inline-block border-bottom border-3 border-primary pb-2">MyCourseApp</span>
+                </h1>
+                <p class="lead mb-4">
+                    منصة تربط الطلاب بالأساتذة بسهولة واحترافية — نظم لقاءاتك التعليمية وادرس في أي وقت يناسبك
+                </p>
 
-Welcome to your new app.
+                <div class="d-flex flex-column flex-md-row gap-3 mb-4">
+                    <button class="btn btn-success btn-lg px-4 py-3 fw-bold shadow"
+                            @onclick="@(() => Navigation.NavigateTo("/courses"))">
+                        <i class="bi bi-search me-2"></i> تصفح الدورات
+                    </button>
+                    <button class="btn btn-outline-primary btn-lg px-4 py-3 fw-bold"
+                            @onclick="@(() => Navigation.NavigateTo("/register"))">
+                        <i class="bi bi-person-plus me-2"></i> إنشاء حساب
+                    </button>
+                </div>
+
+                <p class="mb-0">
+                    لديك حساب بالفعل؟
+                    <a href="/login" class="text-decoration-none fw-bold text-primary">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> سجل دخولك هنا
+                    </a>
+                </p>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="https://placehold.co/600x400/eee/007bff?text=MyCourseApp" alt="منصة التعليم" class="img-fluid rounded-3 shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold mb-3">لماذا تختار MyCourseApp؟</h2>
+            <p class="text-muted lead">مميزات تجعل تجربتك التعليمية أفضل</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card p-4 border-0 rounded-3 h-100 text-center">
+                    <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3 mx-auto">
+                        <i class="bi bi-calendar-check fs-2"></i>
+                    </div>
+                    <h3 class="h4 mb-3">حجز مرن</h3>
+                    <p class="mb-0">اختر الأوقات التي تناسب جدولك الدراسي</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card p-4 border-0 rounded-3 h-100 text-center">
+                    <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3 mx-auto">
+                        <i class="bi bi-people fs-2"></i>
+                    </div>
+                    <h3 class="h4 mb-3">أساتذة متميزون</h3>
+                    <p class="mb-0">تعلم من أفضل الخبراء في تخصصك</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card p-4 border-0 rounded-3 h-100 text-center">
+                    <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3 mx-auto">
+                        <i class="bi bi-chat-left-text fs-2"></i>
+                    </div>
+                    <h3 class="h4 mb-3">تقييمات شفافة</h3>
+                    <p class="mb-0">اقرأ تجارب الآخرين قبل الاختيار</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card p-4 border-0 rounded-3 h-100 text-center">
+                    <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3 mx-auto">
+                        <i class="bi bi-headset fs-2"></i>
+                    </div>
+                    <h3 class="h4 mb-3">دعم فني</h3>
+                    <p class="mb-0">فريق دعم متاح لمساعدتك دائماً</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-5 bg-light">
+    <div class="container py-4">
+        <div class="row g-4 text-center">
+            <div class="col-6 col-md-3">
+                <div class="p-3">
+                    <h3 class="display-5 fw-bold text-primary mb-2">+500</h3>
+                    <p class="mb-0 text-muted">أستاذ محترف</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-3">
+                    <h3 class="display-5 fw-bold text-primary mb-2">+10K</h3>
+                    <p class="mb-0 text-muted">طالب مسجل</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-3">
+                    <h3 class="display-5 fw-bold text-primary mb-2">+5K</h3>
+                    <p class="mb-0 text-muted">جلسة تعليمية</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-3">
+                    <h3 class="display-5 fw-bold text-primary mb-2">98%</h3>
+                    <p class="mb-0 text-muted">رضى العملاء</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold mb-3">آراء طلابنا</h2>
+            <p class="text-muted lead">ماذا يقولون عن تجربتهم معنا</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="p-4 bg-light rounded-3 h-100">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-person-circle fs-1 text-muted me-3"></i>
+                        <div>
+                            <h4 class="h5 mb-0">أحمد محمد</h4>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">"المنصة ساعدتني في العثور على أفضل الأساتذة لمواد التخصص، وجدولة المواعيد كانت سهلة جدًا."</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-4 bg-light rounded-3 h-100">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-person-circle fs-1 text-muted me-3"></i>
+                        <div>
+                            <h4 class="h5 mb-0">نورا عبدالله</h4>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">"تجربة رائعة، واجهة بسيطة وسهلة الاستخدام، والأهم أن الأساتذة متخصصون ومتميزون."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white">
+    <div class="container py-4 text-center">
+        <h2 class="fw-bold mb-4">جاهز لبدء رحلتك التعليمية؟</h2>
+        <p class="lead mb-4">سجل الآن واحصل على أول جلسة تعليمية مع خصم 25%</p>
+        <button class="btn btn-light btn-lg px-4 py-3 fw-bold"
+                @onclick="@(() => Navigation.NavigateTo("/register"))">
+            <i class="bi bi-rocket me-2"></i> ابدأ الآن
+        </button>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <h3 class="h5 mb-3">
+                    <i class="bi bi-book me-2"></i> MyCourseApp
+                </h3>
+                <p class="text-muted">منصة تعليمية تهدف إلى ربط الطلاب بالأساتذة المحترفين لتسهيل العملية التعليمية.</p>
+                <div class="social-links mt-3">
+                    <a href="#" class="text-white me-3" aria-label="Twitter">
+                        <i class="bi bi-twitter fs-5"></i>
+                    </a>
+                    <a href="#" class="text-white me-3" aria-label="Instagram">
+                        <i class="bi bi-instagram fs-5"></i>
+                    </a>
+                    <a href="#" class="text-white me-3" aria-label="YouTube">
+                        <i class="bi bi-youtube fs-5"></i>
+                    </a>
+                    <a href="#" class="text-white" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin fs-5"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <h3 class="h5 mb-3">روابط سريعة</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/about" class="text-white text-decoration-none"><i class="bi bi-chevron-left me-1"></i> عن المنصة</a></li>
+                    <li class="mb-2"><a href="/courses" class="text-white text-decoration-none"><i class="bi bi-chevron-left me-1"></i> الدورات</a></li>
+                    <li class="mb-2"><a href="/pricing" class="text-white text-decoration-none"><i class="bi bi-chevron-left me-1"></i> الأسعار</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <h3 class="h5 mb-3">المساعدة</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/faq" class="text-white text-decoration-none"><i class="bi bi-chevron-left me-1"></i> الأسئلة الشائعة</a></li>
+                    <li class="mb-2"><a href="/contact" class="text-white text-decoration-none"><i class="bi bi-chevron-left me-1"></i> اتصل بنا</a></li>
+                    <li class="mb-2"><a href="/blog" class="text-white text-decoration-none"><i class="bi bi-chevron-left me-1"></i> المدونة</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <h3 class="h5 mb-3">تواصل معنا</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-envelope me-2"></i> info@mycourseapp.com</li>
+                    <li class="mb-2"><i class="bi bi-telephone me-2"></i> +966 12 345 6789</li>
+                    <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> الرياض، المملكة العربية السعودية</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="my-4 border-secondary">
+        <div class="text-center pt-2">
+            <p class="mb-0 text-muted small">&copy; 2025 MyCourseApp. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .hero-section {
+        background: linear-gradient(to left, #f8f9fa 0%, #ffffff 100%);
+    }
+
+    .feature-card {
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+            border-color: rgba(13, 110, 253, 0.2) !important;
+        }
+
+    .icon-wrapper {
+        transition: all 0.3s ease;
+    }
+
+    .feature-card:hover .icon-wrapper {
+        background-color: rgba(13, 110, 253, 0.2) !important;
+        transform: rotate(5deg) scale(1.1);
+    }
+
+    .btn-success {
+        transition: all 0.3s ease;
+    }
+
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3) !important;
+        }
+
+    .btn-outline-primary {
+        transition: all 0.3s ease;
+    }
+
+        .btn-outline-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(13, 110, 253, 0.2) !important;
+        }
+
+    .social-links a {
+        transition: opacity 0.3s ease;
+        display: inline-block;
+    }
+
+        .social-links a:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+        }
+</style>

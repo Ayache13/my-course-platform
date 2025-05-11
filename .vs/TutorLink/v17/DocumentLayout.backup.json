@@ -3,40 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\teachers.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\teachers.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\coursedetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\coursedetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\mycourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\mycourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\teacherdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\teacherdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\studentdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\studentdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\studentmycourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\studentmycourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\layout\\sidebarmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\layout\\sidebarmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\addcourse.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\addcourse.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\courses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\courses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\coursedetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\coursedetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\addcourse.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\addcourse.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\mycourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\mycourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.shared\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,8 +55,79 @@
       "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\data\\coursesplatformdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\data\\coursesplatformdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.shared\\dtos\\teacherwithcoursesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|solutionrelative:mycourseapp.shared\\dtos\\teacherwithcoursesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.shared\\dtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|solutionrelative:mycourseapp.shared\\dtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\models\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\models\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.shared\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|solutionrelative:mycourseapp.shared\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AYACHE REDOUANE\\AppData\\Local\\SourceServer\\a275536203058ddb611d6fa2b74742fa349a2e948c3e1d23ba1037e6d3a36cd5\\CoursesPlatform.Api\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\teacherdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\teacherdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\studentdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\studentdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\students.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\students.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\studentmycourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\studentmycourses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\services\\teacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,36 +142,8 @@
       "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.shared\\dtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|solutionrelative:mycourseapp.shared\\dtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\controllers\\studentcoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\controllers\\studentcoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.shared\\dtos\\teacherwithcoursesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|solutionrelative:mycourseapp.shared\\dtos\\teacherwithcoursesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.shared\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|solutionrelative:mycourseapp.shared\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\registerteacher.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -101,10 +152,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\registerstudent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\registerstudent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.shared\\models\\teacherregisterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -117,10 +164,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.shared\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01561DF6-C4F8-AE44-5A07-A53F44AB2BF6}|MyCourseApp.Shared\\MyCourseApp.Shared.csproj|solutionrelative:mycourseapp.shared\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\data\\coursesplatformdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|solutionrelative:coursesplatform.api\\data\\coursesplatformdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -141,10 +184,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\mycourseapp.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4024A6A8-75AC-43F8-AF7E-F7C653B08EF6}|MyCourseApp.Web\\MyCourseApp.Web.csproj|solutionrelative:mycourseapp.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81D9A976-8700-4A2E-87CC-C7AAE5509F14}|CoursesPlatform.Api\\CoursesPlatform.Api.csproj|c:\\users\\ayache redouane\\source\\repos\\tutorlink\\coursesplatform.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -178,7 +217,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -198,119 +237,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyCourses.razor",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\MyCourses.razor",
-              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\MyCourses.razor",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\MyCourses.razor",
-              "RelativeToolTip": "MyCourseApp.Web\\Pages\\MyCourses.razor",
-              "ViewState": "AgIAABUAAAAAAAAAAAAqwC4AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-09T20:25:47.041Z",
+              "DocumentIndex": 3,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Models\\Teacher.cs",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Models\\Teacher.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Models\\Teacher.cs",
+              "RelativeToolTip": "MyCourseApp.Web\\Models\\Teacher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T20:21:22.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "Teachers.razor",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Teachers.razor",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\Teachers.razor",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Teachers.razor",
+              "RelativeToolTip": "MyCourseApp.Web\\Pages\\Teachers.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T20:18:08.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AddCourse.razor",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\AddCourse.razor",
               "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\AddCourse.razor",
               "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\AddCourse.razor",
               "RelativeToolTip": "MyCourseApp.Web\\Pages\\AddCourse.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAFQAAAByAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-09T17:40:55.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentDashboard.razor",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\StudentDashboard.razor",
-              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\StudentDashboard.razor",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\StudentDashboard.razor",
-              "RelativeToolTip": "MyCourseApp.Web\\Pages\\StudentDashboard.razor",
-              "ViewState": "AgIAACAAAAAAAAAAAAAqwC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T21:04:01.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CourseService.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Services\\CourseService.cs",
-              "RelativeDocumentMoniker": "MyCourseApp.Web\\Services\\CourseService.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Services\\CourseService.cs",
-              "RelativeToolTip": "MyCourseApp.Web\\Services\\CourseService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAADAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T17:23:21.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CoursesController.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Controllers\\CoursesController.cs",
-              "RelativeDocumentMoniker": "CoursesPlatform.Api\\Controllers\\CoursesController.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Controllers\\CoursesController.cs*",
-              "RelativeToolTip": "CoursesPlatform.Api\\Controllers\\CoursesController.cs*",
-              "ViewState": "AgIAAPAAAAAAAAAAAAAmwAgBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T18:56:23.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TeacherDashboard.razor",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\TeacherDashboard.razor",
-              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\TeacherDashboard.razor",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\TeacherDashboard.razor",
-              "RelativeToolTip": "MyCourseApp.Web\\Pages\\TeacherDashboard.razor",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T18:53:18.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "CourseDetails.razor",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\CourseDetails.razor",
               "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\CourseDetails.razor",
               "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\CourseDetails.razor",
               "RelativeToolTip": "MyCourseApp.Web\\Pages\\CourseDetails.razor",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-09T18:02:27.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "MyCourseApp.Web\\Models\\Course.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Models\\Course.cs",
-              "RelativeToolTip": "MyCourseApp.Web\\Models\\Course.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAYwBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T17:42:14.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StudentMyCourses.razor",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\StudentMyCourses.razor",
-              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\StudentMyCourses.razor",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\StudentMyCourses.razor",
-              "RelativeToolTip": "MyCourseApp.Web\\Pages\\StudentMyCourses.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-09T20:08:43.435Z",
               "EditorCaption": ""
             },
             {
@@ -321,14 +295,360 @@
               "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\Courses.razor",
               "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Courses.razor",
               "RelativeToolTip": "MyCourseApp.Web\\Pages\\Courses.razor",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAE4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAK0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-09T19:22:43.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CoursesPlatformDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Data\\CoursesPlatformDbContext.cs",
+              "RelativeDocumentMoniker": "CoursesPlatform.Api\\Data\\CoursesPlatformDbContext.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Data\\CoursesPlatformDbContext.cs",
+              "RelativeToolTip": "CoursesPlatform.Api\\Data\\CoursesPlatformDbContext.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAwwDIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T19:26:20.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Models\\Course.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Models\\Course.cs",
+              "RelativeToolTip": "MyCourseApp.Web\\Models\\Course.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T17:42:14.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SidebarMenu.razor",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Layout\\SidebarMenu.razor",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Layout\\SidebarMenu.razor",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Layout\\SidebarMenu.razor",
+              "RelativeToolTip": "MyCourseApp.Web\\Layout\\SidebarMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T20:04:54.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "MyCourseApp.Web\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-10T15:53:46.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "MyCourseApp.Web\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-10T15:53:56.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CourseService.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Services\\CourseService.cs",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Services\\CourseService.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Services\\CourseService.cs",
+              "RelativeToolTip": "MyCourseApp.Web\\Services\\CourseService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBQAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T17:23:21.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MyCourses.razor",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\MyCourses.razor",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\MyCourses.razor",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\MyCourses.razor",
+              "RelativeToolTip": "MyCourseApp.Web\\Pages\\MyCourses.razor",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAwFEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T20:25:47.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\Login.razor",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Login.razor",
+              "RelativeToolTip": "MyCourseApp.Web\\Pages\\Login.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T08:30:10.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TeacherWithCoursesDto.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\TeacherWithCoursesDto.cs",
+              "RelativeDocumentMoniker": "MyCourseApp.Shared\\Dtos\\TeacherWithCoursesDto.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\TeacherWithCoursesDto.cs",
+              "RelativeToolTip": "MyCourseApp.Shared\\Dtos\\TeacherWithCoursesDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:50:37.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TeacherDto.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\TeacherDto.cs",
+              "RelativeDocumentMoniker": "MyCourseApp.Shared\\Dtos\\TeacherDto.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\TeacherDto.cs",
+              "RelativeToolTip": "MyCourseApp.Shared\\Dtos\\TeacherDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:50:03.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CourseDto.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\CourseDto.cs",
+              "RelativeDocumentMoniker": "MyCourseApp.Shared\\Dtos\\CourseDto.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\CourseDto.cs",
+              "RelativeToolTip": "MyCourseApp.Shared\\Dtos\\CourseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:52:08.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 19,
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\StudentDto.cs",
+              "RelativeDocumentMoniker": "MyCourseApp.Shared\\Dtos\\StudentDto.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\StudentDto.cs",
+              "RelativeToolTip": "MyCourseApp.Shared\\Dtos\\StudentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:46:59.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "CoursesPlatform.Api\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\Student.cs",
+              "RelativeToolTip": "CoursesPlatform.Api\\Models\\Student.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T19:57:38.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "CoursesPlatform.Api\\Models\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\RegisterRequest.cs",
+              "RelativeToolTip": "CoursesPlatform.Api\\Models\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T17:30:05.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "CoursesPlatform.Api\\Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "CoursesPlatform.Api\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABABAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T17:20:28.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\AppData\\Local\\SourceServer\\a275536203058ddb611d6fa2b74742fa349a2e948c3e1d23ba1037e6d3a36cd5\\CoursesPlatform.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\a275536203058ddb611d6fa2b74742fa349a2e948c3e1d23ba1037e6d3a36cd5\\CoursesPlatform.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\AppData\\Local\\SourceServer\\a275536203058ddb611d6fa2b74742fa349a2e948c3e1d23ba1037e6d3a36cd5\\CoursesPlatform.Api\\Controllers\\AuthController.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\a275536203058ddb611d6fa2b74742fa349a2e948c3e1d23ba1037e6d3a36cd5\\CoursesPlatform.Api\\Controllers\\AuthController.cs [Read Only]",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAawNkAAAAIAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T17:15:48.98Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "CoursesPlatform.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\appsettings.json",
+              "RelativeToolTip": "CoursesPlatform.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-11T17:14:24.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Services\\AuthService.cs",
+              "RelativeToolTip": "MyCourseApp.Web\\Services\\AuthService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAawCsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T09:04:48.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "CoursesPlatform.Api\\Models\\Course.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\Course.cs",
+              "RelativeToolTip": "CoursesPlatform.Api\\Models\\Course.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:59:20.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Home.razor",
+              "RelativeToolTip": "MyCourseApp.Web\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T10:39:10.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Students.razor",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Students.razor",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\Students.razor",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Students.razor",
+              "RelativeToolTip": "MyCourseApp.Web\\Pages\\Students.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-10T12:31:23.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CoursesPlatform.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CoursesPlatform.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAuwMoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:15:49.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "StudentDashboard.razor",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\StudentDashboard.razor",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\StudentDashboard.razor",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\StudentDashboard.razor",
+              "RelativeToolTip": "MyCourseApp.Web\\Pages\\StudentDashboard.razor",
+              "ViewState": "AgIAACAAAAAAAAAAAAAqwCsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T21:04:01.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\wwwroot\\index.html",
+              "RelativeToolTip": "MyCourseApp.Web\\wwwroot\\index.html",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-11T16:43:37.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Program.cs",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Program.cs",
+              "RelativeToolTip": "MyCourseApp.Web\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:27:57.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TeacherDashboard.razor",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\TeacherDashboard.razor",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\TeacherDashboard.razor",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\TeacherDashboard.razor",
+              "RelativeToolTip": "MyCourseApp.Web\\Pages\\TeacherDashboard.razor",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAABYAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-08T18:53:18.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "StudentMyCourses.razor",
+              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\StudentMyCourses.razor",
+              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\StudentMyCourses.razor",
+              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\StudentMyCourses.razor",
+              "RelativeToolTip": "MyCourseApp.Web\\Pages\\StudentMyCourses.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T20:08:43.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "StudentCourseController.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Controllers\\StudentCourseController.cs",
               "RelativeDocumentMoniker": "CoursesPlatform.Api\\Controllers\\StudentCourseController.cs",
@@ -340,20 +660,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CourseDto.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\CourseDto.cs",
-              "RelativeDocumentMoniker": "MyCourseApp.Shared\\Dtos\\CourseDto.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\CourseDto.cs",
-              "RelativeToolTip": "MyCourseApp.Shared\\Dtos\\CourseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T18:52:08.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 33,
               "Title": "TeachersController.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Controllers\\TeachersController.cs",
               "RelativeDocumentMoniker": "CoursesPlatform.Api\\Controllers\\TeachersController.cs",
@@ -366,19 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "CoursesPlatform.Api\\Models\\Student.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\Student.cs",
-              "RelativeToolTip": "CoursesPlatform.Api\\Models\\Student.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T19:57:38.068Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 34,
               "Title": "StudentsController.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Controllers\\StudentsController.cs",
               "RelativeDocumentMoniker": "CoursesPlatform.Api\\Controllers\\StudentsController.cs",
@@ -390,55 +685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "CoursesPlatform.Api\\Models\\Course.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\Course.cs",
-              "RelativeToolTip": "CoursesPlatform.Api\\Models\\Course.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAowBUAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T18:59:20.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TeacherWithCoursesDto.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\TeacherWithCoursesDto.cs",
-              "RelativeDocumentMoniker": "MyCourseApp.Shared\\Dtos\\TeacherWithCoursesDto.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\TeacherWithCoursesDto.cs",
-              "RelativeToolTip": "MyCourseApp.Shared\\Dtos\\TeacherWithCoursesDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T18:50:37.009Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TeacherDto.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\TeacherDto.cs",
-              "RelativeDocumentMoniker": "MyCourseApp.Shared\\Dtos\\TeacherDto.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\TeacherDto.cs",
-              "RelativeToolTip": "MyCourseApp.Shared\\Dtos\\TeacherDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T18:50:03.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "StudentDto.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\StudentDto.cs",
-              "RelativeDocumentMoniker": "MyCourseApp.Shared\\Dtos\\StudentDto.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Dtos\\StudentDto.cs",
-              "RelativeToolTip": "MyCourseApp.Shared\\Dtos\\StudentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T18:46:59.94Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 37,
               "Title": "RegisterStudent.razor",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\RegisterStudent.razor",
               "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\RegisterStudent.razor",
@@ -450,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 38,
               "Title": "TeacherRegisterRequest.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Models\\TeacherRegisterRequest.cs",
               "RelativeDocumentMoniker": "MyCourseApp.Shared\\Models\\TeacherRegisterRequest.cs",
@@ -462,7 +709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 39,
               "Title": "Register.razor",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Register.razor",
               "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\Register.razor",
@@ -474,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 36,
               "Title": "RegisterTeacher.razor",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\RegisterTeacher.razor",
               "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\RegisterTeacher.razor",
@@ -486,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 40,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Models\\LoginRequest.cs",
               "RelativeDocumentMoniker": "MyCourseApp.Shared\\Models\\LoginRequest.cs",
@@ -498,20 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "CoursesPlatform.Api\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "CoursesPlatform.Api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAowDMAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:15:49.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 50,
               "Title": "20250507194630_AddTeacherUserRelation.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Migrations\\20250507194630_AddTeacherUserRelation.cs",
               "RelativeDocumentMoniker": "CoursesPlatform.Api\\Migrations\\20250507194630_AddTeacherUserRelation.cs",
@@ -523,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 51,
               "Title": "20250507194112_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Migrations\\20250507194112_InitialCreate.cs",
               "RelativeDocumentMoniker": "CoursesPlatform.Api\\Migrations\\20250507194112_InitialCreate.cs",
@@ -535,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 43,
               "Title": "20250507193739_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Migrations\\20250507193739_InitialCreate.cs",
               "RelativeDocumentMoniker": "CoursesPlatform.Api\\Migrations\\20250507193739_InitialCreate.cs",
@@ -547,7 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 44,
               "Title": "StudentCourse.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\StudentCourse.cs",
               "RelativeDocumentMoniker": "CoursesPlatform.Api\\Models\\StudentCourse.cs",
@@ -559,19 +793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CoursesPlatformDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Data\\CoursesPlatformDbContext.cs",
-              "RelativeDocumentMoniker": "CoursesPlatform.Api\\Data\\CoursesPlatformDbContext.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Data\\CoursesPlatformDbContext.cs",
-              "RelativeToolTip": "CoursesPlatform.Api\\Data\\CoursesPlatformDbContext.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T19:26:20.59Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 42,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\User.cs",
               "RelativeDocumentMoniker": "CoursesPlatform.Api\\Models\\User.cs",
@@ -583,7 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 41,
               "Title": "Teacher.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Models\\Teacher.cs",
               "RelativeDocumentMoniker": "CoursesPlatform.Api\\Models\\Teacher.cs",
@@ -595,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 45,
               "Title": "Weather.razor",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Weather.razor",
               "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\Weather.razor",
@@ -607,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 46,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\CoursesPlatform.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "CoursesPlatform.Api\\Properties\\launchSettings.json",
@@ -619,19 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "MyCourseApp.Web\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Properties\\launchSettings.json",
-              "RelativeToolTip": "MyCourseApp.Web\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-06T19:10:24.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 47,
               "Title": "Auth.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Services\\Auth\\Auth.cs",
               "RelativeDocumentMoniker": "MyCourseApp.Web\\Services\\Auth\\Auth.cs",
@@ -643,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 32,
               "Title": "TeacherService.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Services\\TeacherService.cs",
               "RelativeDocumentMoniker": "MyCourseApp.Web\\Services\\TeacherService.cs",
@@ -651,12 +861,11 @@
               "RelativeToolTip": "MyCourseApp.Web\\Services\\TeacherService.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T17:23:48.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T17:23:48.539Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 48,
               "Title": "CustomAuthenticationStateProvider.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Services\\CustomAuthenticationStateProvider.cs",
               "RelativeDocumentMoniker": "MyCourseApp.Web\\Services\\CustomAuthenticationStateProvider.cs",
@@ -668,32 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Program.cs",
-              "RelativeDocumentMoniker": "MyCourseApp.Web\\Program.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Program.cs",
-              "RelativeToolTip": "MyCourseApp.Web\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwDUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T10:27:57.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "MyCourseApp.Web\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Services\\AuthService.cs",
-              "RelativeToolTip": "MyCourseApp.Web\\Services\\AuthService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwCsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T09:04:48.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 49,
               "Title": "StudentRegisterRequest.cs",
               "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Shared\\Models\\StudentRegisterRequest.cs",
               "RelativeDocumentMoniker": "MyCourseApp.Shared\\Models\\StudentRegisterRequest.cs",
@@ -702,19 +886,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T08:35:07.614Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Login.razor",
-              "RelativeDocumentMoniker": "MyCourseApp.Web\\Pages\\Login.razor",
-              "ToolTip": "C:\\Users\\AYACHE REDOUANE\\source\\repos\\TutorLink\\MyCourseApp.Web\\Pages\\Login.razor",
-              "RelativeToolTip": "MyCourseApp.Web\\Pages\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T08:30:10.877Z",
-              "EditorCaption": ""
             }
           ]
         },

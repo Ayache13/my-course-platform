@@ -1,0 +1,67 @@
+﻿@page "/edit-course/{id:int}"
+@inject CourseService CourseService
+@inject NavigationManager Navigation
+@using MyCourseApp.Shared.Dtos
+@using MyCourseApp.Web.Services
+
+<h3>تعديل الدورة</h3>
+
+@if (course == null)
+{
+    <p>جاري تحميل بيانات الدورة...</p>
+}
+else
+{
+    <EditForm Model="@course" OnValidSubmit="HandleSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-group">
+            <label>عنوان الدورة</label>
+            <InputText class="form-control" @bind-Value="course.Title" />
+        </div>
+
+        <div class="form-group">
+            <label>وصف الدورة</label>
+            <InputText class="form-control" @bind-Value="course.Description" />
+        </div>
+
+        <div class="form-group">
+            <label>تاريخ البداية</label>
+            <InputDate class="form-control" @bind-Value="course.StartDate" />
+        </div>
+
+        <div class="form-group">
+            <label>تاريخ النهاية</label>
+            <InputDate class="form-control" @bind-Value="course.EndDate" />
+        </div>
+
+        <div class="form-group">
+            <label>تقييم الدورة</label>
+            <InputNumber class="form-control" @bind-Value="course.Rate" />
+        </div>
+
+        <button type="submit" class="btn btn-success">حفظ التعديلات</button>
+        <button type="button" class="btn btn-secondary ms-2" @onclick="GoBack">رجوع</button>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    private CourseDto? course;
+
+    protected override async Task OnInitializedAsync()
+    {
+        course = await CourseService.GetCourseByIdAsync(id); 
+    }
+
+    private async Task HandleSubmit()
+    {
+        await CourseService.UpdateCourseAsync(id, course!);
+        Navigation.NavigateTo("/teacher/dashboard");
+    }
+
+    void GoBack() => Navigation.NavigateTo("/teacher/dashboard");
+}

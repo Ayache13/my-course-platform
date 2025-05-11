@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyCourseApp.SharedUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d706d0e4727491f7f99c841111384e4626a114b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyCourseApp.SharedUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyCourseApp.SharedUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

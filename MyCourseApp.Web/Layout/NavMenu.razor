@@ -1,43 +1,197 @@
-﻿<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">MyCourseApp.Web</a>
-    </div>
-</nav>
+﻿@* NavMenu.razor *@
+@inject NavigationManager Navigation
+@inject ILocalStorageService LocalStorage
+@inject IJSRuntime JSRuntime
+@using Blazored.LocalStorage
+@implements IDisposable
 
-<div class="bg-light border-end" id="sidebar-wrapper" style="width: 250px; height: 100vh; position: fixed;">
-    <div class="list-group list-group-flush mt-3">
-        <NavLink class="list-group-item list-group-item-action" href="" Match="NavLinkMatch.All">
-            <i class="bi bi-house-door-fill me-2"></i> الصفحة الرئيسية
-        </NavLink>
-        <NavLink class="list-group-item list-group-item-action" href="counter">
-            <i class="bi bi-plus-square-fill me-2"></i> العداد
-        </NavLink>
-        <NavLink class="list-group-item list-group-item-action" href="weather">
-            <i class="bi bi-cloud-sun me-2"></i> الطقس
-        </NavLink>
-        <NavLink class="list-group-item list-group-item-action" href="courses">
-            <i class="bi bi-book-fill me-2"></i> الدورات
-        </NavLink>
-        <NavLink class="list-group-item list-group-item-action" href="teachers">
-            <i class="bi bi-person-badge-fill me-2"></i> الأساتذة
-        </NavLink>
-        <NavLink class="list-group-item list-group-item-action" href="students">
-            <i class="bi bi-people-fill me-2"></i> الطلاب
-        </NavLink>
-        <NavLink class="list-group-item list-group-item-action" href="add-course">
-            <i class="bi bi-plus-circle me-2"></i> إضافة دورة
-        </NavLink>
+<div class="sidebar-container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <button class="navbar-toggler me-2" type="button" @onclick="ToggleSidebar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/">MyCourseApp</a>
+        </div>
+    </nav>
+
+    <div class="@($"sidebar {(sidebarCollapsed ? "collapsed" : "")}")" @onclick:stopPropagation>
+        <div class="sidebar-header">
+            <button class="toggle-btn" @onclick="ToggleSidebar">
+                <i class="bi @(sidebarCollapsed ? "bi-chevron-right" : "bi-chevron-left")"></i>
+            </button>
+        </div>
+
+        <div class="sidebar-menu">
+            <NavLink class="nav-item" href="" Match="NavLinkMatch.All">
+                <i class="bi bi-house-door-fill"></i>
+                <span class="nav-text">الصفحة الرئيسية</span>
+            </NavLink>
+
+            <NavLink class="nav-item" href="courses">
+                <i class="bi bi-book-fill"></i>
+                <span class="nav-text">الدورات</span>
+            </NavLink>
+
+            <NavLink class="nav-item" href="teachers">
+                <i class="bi bi-person-badge-fill"></i>
+                <span class="nav-text">الأساتذة</span>
+            </NavLink>
+
+            <NavLink class="nav-item" href="students">
+                <i class="bi bi-people-fill"></i>
+                <span class="nav-text">الطلاب</span>
+            </NavLink>
+
+            <NavLink class="nav-item" href="add-course">
+                <i class="bi bi-plus-circle"></i>
+                <span class="nav-text">إضافة دورة</span>
+            </NavLink>
+
+            <div class="logout-section">
+                <button class="nav-item text-danger" @onclick="Logout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span class="nav-text">تسجيل الخروج</span>
+                </button>
+            </div>
+        </div>
     </div>
 </div>
 
-
 @code {
-    private bool collapseNavMenu = true;
+    private bool sidebarCollapsed = false;
+    private DotNetObjectReference<NavMenu>? objRef;
 
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
+    private async Task ToggleSidebar()
     {
-        collapseNavMenu = !collapseNavMenu;
+        sidebarCollapsed = !sidebarCollapsed;
+        await LocalStorage.SetItemAsync("sidebarCollapsed", sidebarCollapsed);
+    }
+
+    private async Task Logout()
+    {
+        await LocalStorage.RemoveItemAsync("authToken");
+        Navigation.NavigateTo("/login", forceLoad: true);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var savedState = await LocalStorage.GetItemAsync<bool>("sidebarCollapsed");
+            sidebarCollapsed = savedState;
+            StateHasChanged();
+        }
+    }
+
+    public void Dispose()
+    {
+        objRef?.Dispose();
     }
 }
+
+<style>
+    .sidebar-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .navbar {
+        height: 56px;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: calc(100vh - 56px);
+        background-color: #2c3e50;
+        color: white;
+        transition: width 0.3s;
+        position: fixed;
+        top: 56px;
+        left: 0;
+        z-index: 1000;
+    }
+
+        .sidebar.collapsed {
+            width: 60px;
+        }
+
+    .sidebar-header {
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .toggle-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.25rem;
+    }
+
+    .sidebar-menu {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 50px);
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .nav-item.active {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .nav-item i {
+            width: 24px;
+            font-size: 1.1rem;
+        }
+
+    .nav-text {
+        margin-right: 10px;
+        transition: opacity 0.3s;
+    }
+
+    .sidebar.collapsed .nav-text {
+        opacity: 0;
+        width: 0;
+        overflow: hidden;
+    }
+
+    .logout-section {
+        margin-top: auto;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @@media (max-width: 768px) {
+        .sidebar {
+            transform: translateX(-100%);
+        }
+
+            .sidebar.show {
+                transform: translateX(0);
+            }
+
+            .sidebar.collapsed {
+                transform: translateX(-100%);
+            }
+    }
+</style>

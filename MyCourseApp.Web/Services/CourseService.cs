@@ -48,6 +48,11 @@ namespace MyCourseApp.Web.Services
             await _http.DeleteAsync($"api/courses/{id}");
         }
 
+        public async Task UpdateCourseAsync(int id, CourseDto course)
+        {
+            await _http.PutAsJsonAsync($"api/courses/{id}", course);
+        }
+
 
         public async Task AddCourseAsync(CourseDto course)
         {

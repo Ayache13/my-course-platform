@@ -2,29 +2,79 @@
 @inject CourseService CourseService
 @using MyCourseApp.Shared.Dtos
 @using MyCourseApp.Web.Services
+@using System.Globalization
 
-<h3 class="mb-4">دوراتي</h3>
+<h3 class="mb-4">
+    <i class="bi bi-journal-bookmark me-2"></i> دوراتي التعليمية
+</h3>
 
 @if (courses == null)
 {
-    <p>جاري تحميل الدورات...</p>
+    <div class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">جار التحميل...</span>
+        </div>
+        <p class="mt-2">جاري تحميل الدورات...</p>
+    </div>
 }
 else if (!courses.Any())
 {
-    <p>لم تقم بإنشاء أي دورات بعد.</p>
+    <div class="text-center py-5">
+        <i class="bi bi-journal-x fs-1 text-muted mb-3"></i>
+        <h5 class="mb-2">لا توجد دورات</h5>
+        <p class="text-muted mb-4">لم تقم بإنشاء أي دورات بعد</p>
+        <a href="/add-course" class="btn btn-primary">
+            <i class="bi bi-plus-lg me-1"></i> إنشاء أول دورة
+        </a>
+    </div>
 }
 else
 {
-    <div class="row">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         @foreach (var course in courses)
         {
-            <div class="col-md-4 mb-3">
+            <div class="col">
                 <div class="card h-100">
+                    <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                        <span class="badge @GetStatusBadgeClass(course)">
+                            @GetStatusText(course)
+                        </span>
+                        <div>
+                            <a href="/edit-course/@course.Id" class="btn btn-sm btn-outline-primary me-1">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+                            <button class="btn btn-sm btn-outline-danger" @onclick="() => ConfirmDelete(course.Id)">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">@course.Title</h5>
-                        <p class="card-text">@course.Description</p>
-                        <a href="/edit-course/@course.Id" class="btn btn-primary btn-sm">تعديل</a>
-                        <button class="btn btn-danger btn-sm ms-2" @onclick="() => DeleteCourse(course.Id)">حذف</button>
+                        <p class="card-text text-muted">@course.Description</p>
+
+                        <div class="mb-3">
+                            <div class="d-flex align-items-center mb-1">
+                                <i class="bi bi-calendar-event me-2 text-primary"></i>
+                                <small>تاريخ البدء: @course.StartDate.ToShortDateString()</small>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-calendar-check me-2 text-primary"></i>
+                                <small>تاريخ الانتهاء: @course.EndDate.ToShortDateString()</small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                <i class="bi @(i <= course.Rate ? "bi-star-fill" : "bi-star") text-warning"></i>
+                            }
+                            <span class="ms-2">(@course.Rate.ToString("0.0", CultureInfo.InvariantCulture))</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="/course/@course.Id" class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-eye me-1"></i> عرض التفاصيل
+                        </a>
                     </div>
                 </div>
             </div>
@@ -32,17 +82,102 @@ else
     </div>
 }
 
+<!-- Delete Confirmation Modal -->
+@if (showDeleteModal)
+{
+    <div class="modal" tabindex="-1" style="display: block; background-color: rgba(0,0,0,0.5)">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">تأكيد الحذف</h5>
+                    <button type="button" class="btn-close" @onclick="CloseModal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>هل أنت متأكد أنك تريد حذف هذه الدورة؟ لا يمكن التراجع عن هذا الإجراء.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CloseModal">إلغاء</button>
+                    <button type="button" class="btn btn-danger" @onclick="DeleteCourse">
+                        <i class="bi bi-trash me-1"></i> حذف
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 @code {
-    private List<CourseDto>? courses;
+    private List<CourseDto> courses;
+    private bool showDeleteModal = false;
+    private int? courseToDelete = null;
 
     protected override async Task OnInitializedAsync()
     {
-        courses = await CourseService.GetCoursesByCurrentTeacherAsync();
+        courses = await CourseService.GetCoursesByCurrentTeacherAsync(); // Changed to match your service method
     }
 
-    private async Task DeleteCourse(int courseId)
+    private string GetStatusBadgeClass(CourseDto course)
     {
-        await CourseService.DeleteCourseAsync(courseId);
-        courses = await CourseService.GetCoursesByCurrentTeacherAsync();
+        if (course.EndDate < DateTime.Now) return "bg-secondary";
+        if (course.StartDate > DateTime.Now) return "bg-info";
+        return "bg-success";
+    }
+
+    private string GetStatusText(CourseDto course)
+    {
+        if (course.EndDate < DateTime.Now) return "منتهية";
+        if (course.StartDate > DateTime.Now) return "قادمة";
+        return "نشطة";
+    }
+
+    private void ConfirmDelete(int courseId)
+    {
+        courseToDelete = courseId;
+        showDeleteModal = true;
+    }
+
+    private void CloseModal()
+    {
+        showDeleteModal = false;
+        courseToDelete = null;
+    }
+
+    private async Task DeleteCourse()
+    {
+        if (courseToDelete.HasValue)
+        {
+            await CourseService.DeleteCourseAsync(courseToDelete.Value);
+            courses = await CourseService.GetCoursesByCurrentTeacherAsync(); // Changed to match your service method
+            CloseModal();
+        }
     }
 }
+
+<style>
+    .card {
+        transition: transform 0.2s, box-shadow 0.2s;
+        border-radius: 10px;
+        overflow: hidden;
+        border: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+    .card-header {
+        border-bottom: none;
+    }
+
+    .card-footer {
+        border-top: none;
+        background-color: transparent;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.35em 0.65em;
+    }
+</style>

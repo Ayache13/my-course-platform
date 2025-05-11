@@ -1,62 +1,164 @@
 ﻿@page "/courses"
 @inject CourseService CourseService
-@using MyCourseApp.Web.Models
-@using MyCourseApp.Web.Services
 @inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
+@using MyCourseApp.Shared.Dtos
+@using MyCourseApp.Web.Services
+@using MyCourseApp.Web.Models
+@using System.Globalization
 
-<h3 class="mb-4">جميع الدورات</h3>
+<div class="courses-page">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="page-title mb-0">
+            <i class="bi bi-journal-bookmark me-2"></i> جميع الدورات
+        </h3>
 
-@if (!string.IsNullOrEmpty(errorMessage))
-{
-    <div class="alert alert-danger">حدث خطأ: @errorMessage</div>
-}
-else if (courses == null)
-{
-    <p>جاري تحميل الدورات...</p>
-}
-else
-{
-    <div class="row">
-        @foreach (var course in courses)
-        {
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">@course.Title</h5>
-                        <p class="card-text">@course.Description</p>
-                        <p class="card-text">
-                            <small class="text-muted">من @course.StartDate.ToShortDateString() إلى @course.EndDate.ToShortDateString()</small>
-                        </p>
-                        <span class="badge bg-success mb-2">التقييم: @course.Rate</span>
-                        <div class="mt-auto d-flex justify-content-between">
+        <div class="d-flex">
+            <div class="input-group me-3" style="width: 250px;">
+                <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                <input type="text" class="form-control" placeholder="ابحث عن دورة..."
+                       @bind="searchQuery" @bind:event="oninput" />
+            </div>
+
+            <select class="form-select" style="width: 180px;" @bind="selectedFilter">
+                <option value="all">جميع الدورات</option>
+                <option value="active">الدورات النشطة</option>
+                <option value="upcoming">الدورات القادمة</option>
+                <option value="completed">الدورات المنتهية</option>
+            </select>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger d-flex align-items-center">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            <div>حدث خطأ: @errorMessage</div>
+        </div>
+    }
+    else if (isLoading)
+    {
+        <div class="text-center py-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">جار التحميل...</span>
+            </div>
+            <p class="mt-3">جاري تحميل الدورات...</p>
+        </div>
+    }
+    else if (!filteredCourses.Any())
+    {
+        <div class="empty-state text-center py-5">
+            <i class="bi bi-journal-x fs-1 text-muted mb-3"></i>
+            <h5 class="mb-2">لا توجد دورات متاحة</h5>
+            <p class="text-muted">@(string.IsNullOrEmpty(searchQuery) ? "لا توجد دورات متطابقة مع معايير البحث" : "لم يتم العثور على نتائج")</p>
+        </div>
+    }
+    else
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var course in filteredCourses)
+            {
+                <div class="col">
+                    <div class="card h-100 course-card">
+                        <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                            <span class="badge @GetStatusBadgeClass(course)">
+                                @GetStatusText(course)
+                            </span>
+                            <div class="rating">
+                                @for (int i = 1; i <= 5; i++)
+                                {
+                                    <i class="bi @(i <= course.Rate ? "bi-star-fill" : "bi-star") text-warning"></i>
+                                }
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@course.Title</h5>
+                            <p class="card-text text-muted">@((course.Description?.Length > 100 ? course.Description.Substring(0, 100) + "..." : course.Description))</p>
+
+                            <div class="course-dates mt-auto">
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="bi bi-calendar-event me-2 text-primary"></i>
+                                    <small>@course.StartDate.ToString("dd MMM yyyy", CultureInfo.GetCultureInfo("en-US"))</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-calendar-check me-2 text-primary"></i>
+                                    <small>@course.EndDate.ToString("dd MMM yyyy", CultureInfo.GetCultureInfo("en-US"))</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent d-flex justify-content-between">
                             <button class="btn btn-outline-primary btn-sm" @onclick="() => NavigateToDetails(course.Id)">
-                                عرض التفاصيل
+                                <i class="bi bi-eye me-1"></i> التفاصيل
                             </button>
-                            <button class="btn btn-success btn-sm" @onclick="() => Register(course.Id)">
-                                تسجيل
+                            <button class="btn btn-success btn-sm" @onclick="() => Register(course.Id)" disabled="@(course.EndDate < DateTime.Today)">
+                                <i class="bi bi-pencil-square me-1"></i> تسجيل
                             </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        }
-    </div>
-}
+            }
+        </div>
+    }
+</div>
 
 @code {
-    private List<Course>? courses;
+    private List<Course> courses = new();
+    private List<Course> filteredCourses = new();
+    private bool isLoading = true;
     private string? errorMessage;
+    private string searchQuery = string.Empty;
+    private string selectedFilter = "all";
 
     protected override async Task OnInitializedAsync()
     {
+        await LoadCourses();
+    }
+
+    private async Task LoadCourses()
+    {
+        isLoading = true;
         try
         {
-            courses = await CourseService.GetAllCoursesAsync();
+            courses = (await CourseService.GetAllCoursesAsync())?.OrderByDescending(c => c.StartDate).ToList()
+                     ?? new List<Course>();
+            FilterCourses();
         }
         catch (Exception ex)
         {
-            errorMessage = ex.Message;
+            errorMessage = $"حدث خطأ: {ex.Message}";
+            Console.Error.WriteLine($"Error loading courses: {ex.Message}");
         }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void FilterCourses()
+    {
+        filteredCourses = courses.Where(c =>
+            (selectedFilter == "all" ||
+             (selectedFilter == "active" && c.StartDate <= DateTime.Today && c.EndDate >= DateTime.Today) ||
+             (selectedFilter == "upcoming" && c.StartDate > DateTime.Today) ||
+             (selectedFilter == "completed" && c.EndDate < DateTime.Today)) &&
+            (string.IsNullOrEmpty(searchQuery) ||
+             c.Title.Contains(searchQuery, StringComparison.OrdinalIgnoreCase) ||
+             c.Description.Contains(searchQuery, StringComparison.OrdinalIgnoreCase))
+        ).ToList();
+    }
+
+    private string GetStatusBadgeClass(Course course)
+    {
+        if (course.EndDate < DateTime.Today) return "bg-secondary";
+        if (course.StartDate > DateTime.Today) return "bg-info";
+        return "bg-success";
+    }
+
+    private string GetStatusText(Course course)
+    {
+        if (course.EndDate < DateTime.Today) return "منتهية";
+        if (course.StartDate > DateTime.Today) return "قادمة";
+        return "نشطة";
     }
 
     private void NavigateToDetails(int id)
@@ -69,13 +171,76 @@ else
         try
         {
             await CourseService.RegisterToCourseAsync(id);
-
-            Console.WriteLine($"تم التسجيل في الدورة {id}");
+            
         }
         catch (Exception ex)
         {
-
-            Console.WriteLine($"خطأ أثناء التسجيل: {ex.Message}");
+            await JSRuntime.InvokeVoidAsync("showToast", "error", "خطأ", $"فشل التسجيل: {ex.Message}");
+            Console.Error.WriteLine($"Registration error: {ex.Message}");
         }
     }
 }
+
+<style>
+    .courses-page {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+
+    .page-title {
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+    .course-card {
+        transition: transform 0.2s, box-shadow 0.2s;
+        border-radius: 10px;
+        overflow: hidden;
+        border: none;
+    }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+        }
+
+    .card-header {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.35em 0.65em;
+        font-weight: 500;
+    }
+
+    .rating {
+        font-size: 0.9rem;
+    }
+
+    .course-dates {
+        background-color: #f8f9fa;
+        padding: 0.75rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
+
+    .empty-state {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border: none;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+
+        .btn-success:disabled {
+            background-color: #6c757d;
+        }
+</style>
