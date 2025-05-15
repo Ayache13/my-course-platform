@@ -1,42 +1,303 @@
 ﻿@page "/Students"
 @inject StudentService StudentService
+@inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
 @using MyCourseApp.Web.Models
 @using MyCourseApp.Web.Services
+@using System.Globalization
 
+<div class="students-page">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="page-title mb-0">
+            <i class="bi bi-people-fill me-2"></i> الطلاب
+        </h3>
 
-<h3 class="mb-4">الطلاب</h3>
+        <div class="d-flex align-items-center">
+            <div class="input-group me-3" style="width: 250px;">
+                <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                <input type="text" class="form-control" placeholder="ابحث عن طالب..."
+                @bind="searchQuery" @bind:event="oninput" />
+            </div>
 
-@if (studentsList == null)
-{
-    <p>جاري تحميل البيانات...</p>
-}
-else if (studentsList.Count == 0)
-{
-    <div class="alert alert-info">لا يوجد طلاب حالياً.</div>
-}
-else
-{
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        @foreach (var student in studentsList)
-        {
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">@student.Name</h5>
-                        <p class="card-text"><strong>البريد الإلكتروني:</strong> @student.Email</p>
-                        <p class="card-text"><strong>عدد الدورات:</strong> @student.StudentCourses?.Count ?? 0</p>
+            <a href="/student/add" class="btn btn-success">
+                <i class="bi bi-plus-lg me-1"></i> إضافة طالب
+            </a>
+        </div>
+    </div>
+
+    @if (isLoading)
+    {
+        <div class="text-center py-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">جار التحميل...</span>
+            </div>
+            <p class="mt-3">جاري تحميل بيانات الطلاب...</p>
+        </div>
+    }
+    else if (!filteredStudents.Any())
+    {
+        <div class="empty-state text-center py-5">
+            <i class="bi bi-people fs-1 text-muted mb-3"></i>
+            <h5 class="mb-2">لا يوجد طلاب</h5>
+            <p class="text-muted">@(string.IsNullOrEmpty(searchQuery) ? "لا يوجد طلاب مسجلين حالياً" : "لم يتم العثور على نتائج")</p>
+            <a href="/student/add" class="btn btn-primary">
+                <i class="bi bi-plus-lg me-1"></i> إضافة طالب جديد
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var student in filteredStudents)
+            {
+                <div class="col">
+                    <div class="card h-100 student-card">
+                        <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">
+                                @student.StudentCourses?.Count دورة
+                            </span>
+                            <div class="dropdown">
+                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                @onclick="(e) => ToggleDropdown(e, student.Id)">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </button>
+                                <div class="dropdown-menu @(activeDropdown == student.Id ? "show" : "")"
+                                @onclick:stopPropagation>
+                                    <button class="dropdown-item" @onclick="() => ViewStudentDetails(student.Id)">
+                                        <i class="bi bi-eye me-2"></i> عرض التفاصيل
+                                    </button>
+                                    <button class="dropdown-item" @onclick="() => EditStudent(student.Id)">
+                                        <i class="bi bi-pencil me-2"></i> تعديل
+                                    </button>
+                                    <div class="dropdown-divider"></div>
+                                    <button class="dropdown-item text-danger" @onclick="() => ConfirmDelete(student.Id)">
+                                        <i class="bi bi-trash me-2"></i> حذف
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="student-avatar mb-3">
+                                <i class="bi bi-person-circle fs-1"></i>
+                            </div>
+                            <h5 class="card-title">@student.Name</h5>
+                            <p class="card-text text-muted">@student.Email</p>
+
+                            <div class="student-info mt-3">
+                                <div class="d-flex align-items-center justify-content-center mb-2">
+                                    <i class="bi bi-calendar me-2 text-primary"></i>
+                                    @* <small>مسجل منذ @student.CreatedAt.ToString("dd MMM yyyy", CultureInfo.GetCultureInfo("ar-SA"))</small> *@
+                                </div>
+                                @* @if (!string.IsNullOrEmpty(student.Phone))
+                                {
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-telephone me-2 text-primary"></i>
+                                        <small>@student.Phone</small>
+                                    </div>
+                                } *@
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent d-flex justify-content-center">
+                            <button class="btn btn-outline-primary btn-sm me-2" @onclick="() => ViewStudentDetails(student.Id)">
+                                <i class="bi bi-eye me-1"></i> التفاصيل
+                            </button>
+                            <button class="btn btn-outline-secondary btn-sm" @onclick="() => ContactStudent(student)">
+                                <i class="bi bi-envelope me-1"></i> تواصل
+                            </button>
+                        </div>
                     </div>
                 </div>
+            }
+        </div>
+    }
+</div>
+
+<!-- Delete Confirmation Modal -->
+@if (showDeleteModal)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5)">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">تأكيد الحذف</h5>
+                    <button type="button" class="btn-close" @onclick="CloseModal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>هل أنت متأكد أنك تريد حذف هذا الطالب؟</p>
+                    <p class="text-muted small">سيتم حذف جميع بيانات الطالب ولا يمكن استرجاعها</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CloseModal">إلغاء</button>
+                    <button type="button" class="btn btn-danger" @onclick="DeleteStudent">
+                        <i class="bi bi-trash me-1"></i> تأكيد الحذف
+                    </button>
+                </div>
             </div>
-        }
+        </div>
     </div>
 }
 
 @code {
-    private List<Student>? studentsList;
+    private List<Student> studentsList = new();
+    private List<Student> filteredStudents = new();
+    private bool isLoading = true;
+    private string searchQuery = string.Empty;
+    private int? activeDropdown = null;
+    private bool showDeleteModal = false;
+    private int? studentToDelete = null;
 
     protected override async Task OnInitializedAsync()
     {
-        studentsList = await StudentService.GetStudentsAsync();
+        await LoadStudents();
+    }
+
+    private async Task LoadStudents()
+    {
+        isLoading = true;
+        try
+        {
+            studentsList = (await StudentService.GetStudentsAsync())?.ToList() ?? new List<Student>();
+            FilterStudents();
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeVoidAsync("console.error", ex.Message);
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void FilterStudents()
+    {
+        filteredStudents = studentsList.Where(s =>
+            string.IsNullOrEmpty(searchQuery) ||
+            (s.Name?.Contains(searchQuery, StringComparison.OrdinalIgnoreCase) ?? false) ||
+            (s.Email?.Contains(searchQuery, StringComparison.OrdinalIgnoreCase) ?? false) /*||
+        (s.Phone?.Contains(searchQuery, StringComparison.OrdinalIgnoreCase) ?? false)
+        */).ToList();
+    }
+
+    private void ToggleDropdown(MouseEventArgs e, int studentId)
+    {
+        activeDropdown = activeDropdown == studentId ? null : studentId;
+    }
+
+    private void ViewStudentDetails(int studentId)
+    {
+        Navigation.NavigateTo($"/student/{studentId}");
+    }
+
+    private void EditStudent(int studentId)
+    {
+        Navigation.NavigateTo($"/student/edit/{studentId}");
+    }
+
+    private void ContactStudent(Student student)
+    {
+        // Implement contact functionality
+        var message = $"سيتم فتح نموذج التواصل مع الطالب {student.Name}";
+        JSRuntime.InvokeVoidAsync("alert", message);
+    }
+
+    private void ConfirmDelete(int studentId)
+    {
+        studentToDelete = studentId;
+        showDeleteModal = true;
+        activeDropdown = null;
+    }
+
+    private void CloseModal()
+    {
+        showDeleteModal = false;
+        studentToDelete = null;
+    }
+
+    private async Task DeleteStudent()
+    {
+        if (studentToDelete.HasValue)
+        {
+            try
+            {
+                // await StudentService.DeleteStudentAsync(studentToDelete.Value);
+                // await JSRuntime.InvokeVoidAsync("showToast", "success", "تم الحذف", "تم حذف الطالب بنجاح");
+                await LoadStudents();
+            }
+            catch (Exception ex)
+            {
+                await JSRuntime.InvokeVoidAsync("showToast", "error", "خطأ", $"فشل حذف الطالب: {ex.Message}");
+            }
+            finally
+            {
+                CloseModal();
+            }
+        }
     }
 }
+
+<style>
+    .students-page {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+
+    .page-title {
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+    .student-card {
+        transition: transform 0.2s, box-shadow 0.2s;
+        border-radius: 10px;
+        overflow: hidden;
+        border: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+        .student-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+        }
+
+    .student-avatar {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        background-color: #f8f9fa;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6c757d;
+    }
+
+    .student-info {
+        background-color: #f8f9fa;
+        padding: 0.75rem;
+        border-radius: 8px;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.35em 0.65em;
+        font-weight: 500;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        right: 0;
+        left: auto;
+    }
+
+    .empty-state {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+    }
+
+    .modal-content {
+        border: none;
+        border-radius: 10px;
+    }
+</style>

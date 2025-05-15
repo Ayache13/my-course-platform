@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/AYACHE REDOUANE/source/repos/TutorLink/MyCourseApp.Web/Pages/CourseCalendar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlQ2FsZW5kYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/AYACHE REDOUANE/source/repos/TutorLink/MyCourseApp.Web/Pages/CourseDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlRGV0YWlscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

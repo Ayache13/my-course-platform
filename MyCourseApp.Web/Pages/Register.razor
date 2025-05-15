@@ -1,21 +1,184 @@
 ﻿@page "/register"
 @inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
 
-<h3 class="text-center mb-4">اختر نوع الحساب</h3>
+<div class="account-type-page">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold mb-3">أنشئ حساب جديد</h1>
+            <p class="lead text-muted">اختر نوع الحساب المناسب لك</p>
+        </div>
 
-<div class="d-flex justify-content-center gap-5">
-    <div class="card p-4 shadow text-center" style="width: 250px; cursor: pointer;" @onclick="GoToStudentRegister">
-        <h5>طالب</h5>
-        <p>أنشئ حساب طالب لتصفح الدورات والانضمام إليها</p>
-    </div>
+        <div class="row justify-content-center g-4">
+            <div class="col-md-5 col-lg-4">
+                <div class="account-card student-card" @onclick="GoToStudentRegister"
+                     @onmouseover="@(() => SetHoveredCard("student"))"
+                     @onmouseout="() => SetHoveredCard(null)">
+                    <div class="card-body text-center py-4">
+                        <div class="account-icon mb-3">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </div>
+                        <h3 class="card-title mb-3">طالب</h3>
+                        <p class="card-text text-muted mb-4">
+                            أنشئ حساب طالب للوصول إلى جميع الدورات التعليمية والمشاركة فيها
+                        </p>
+                        <div class="d-grid">
+                            <button class="btn btn-primary">التسجيل كطالب</button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small class="text-muted">مزايا الحساب:</small>
+                        <ul class="benefits-list">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> تصفح جميع الدورات</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> متابعة تقدمك التعليمي</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> التواصل مع الأساتذة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-    <div class="card p-4 shadow text-center" style="width: 250px; cursor: pointer;" @onclick="GoToTeacherRegister">
-        <h5>أستاذ</h5>
-        <p>أنشئ حساب أستاذ لعرض دوراتك وإدارتها</p>
+            <div class="col-md-5 col-lg-4">
+                <div class="account-card teacher-card" @onclick="GoToTeacherRegister" 
+                     @onmouseover="@(() => SetHoveredCard("teacher"))"
+                     @onmouseout="() => SetHoveredCard(null)">
+                    <div class="card-body text-center py-4">
+                        <div class="account-icon mb-3">
+                            <i class="bi bi-person-badge-fill"></i>
+                        </div>
+                        <h3 class="card-title mb-3">أستاذ</h3>
+                        <p class="card-text text-muted mb-4">
+                            إنشاء حساب أستاذ لإنشاء الدورات التعليمية للزبائن وإدارتها باحترافية
+                        </p>
+                        <div class="d-grid">
+                            <button class="btn btn-success">التسجيل كأستاذ</button>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small class="text-muted">مزايا الحساب:</small>
+                        <ul class="benefits-list">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> إنشاء وإدارة الدورات</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> التواصل مع الطلاب</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> عرض إحصائيات الدورة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <p class="text-muted">لديك حساب بالفعل؟ <a href="/login" class="text-decoration-none fw-bold">سجل دخولك هنا</a></p>
+        </div>
     </div>
 </div>
 
 @code {
-    void GoToStudentRegister() => Navigation.NavigateTo("/register/student");
-    void GoToTeacherRegister() => Navigation.NavigateTo("/register/teacher");
+    private string? hoveredCard;
+
+    private void SetHoveredCard(string? cardType)
+    {
+        hoveredCard = cardType;
+    }
+
+    private async Task GoToStudentRegister()
+    {
+        // await JSRuntime.InvokeVoidAsync("animateClick", "student-card");
+        Navigation.NavigateTo("/register/student");
+    }
+
+    private async Task GoToTeacherRegister()
+    {
+        // await JSRuntime.InvokeVoidAsync("animateClick", "teacher-card");
+        Navigation.NavigateTo("/register/teacher");
+    }
 }
+
+<style>
+    .account-type-page {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-color: #f8f9fa;
+    }
+
+    .account-card {
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        height: 100%;
+        cursor: pointer;
+    }
+
+        .account-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+    .student-card:hover {
+        border-bottom: 4px solid #0d6efd;
+    }
+
+    .teacher-card:hover {
+        border-bottom: 4px solid #198754;
+    }
+
+    .account-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .student-card .account-icon {
+        background-color: rgba(13, 110, 253, 0.1);
+        color: #0d6efd;
+    }
+
+    .teacher-card .account-icon {
+        background-color: rgba(25, 135, 84, 0.1);
+        color: #198754;
+    }
+
+    .benefits-list {
+        list-style: none;
+        padding: 0;
+        text-align: right;
+    }
+
+        .benefits-list li {
+            margin-bottom: 0.5rem;
+        }
+
+    .click-animation {
+        animation: clickEffect 0.3s ease;
+    }
+
+    @@keyframes clickEffect {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(0.95);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+</style>
+
+<script>
+    function animateClick(elementId) {
+        const element = document.getElementById(elementId);
+        element.classList.add('click-animation');
+        setTimeout(() => {
+            element.classList.remove('click-animation');
+        }, 300);
+    }
+</script>

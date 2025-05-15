@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MyCourseApp.Web",
   "resources": {
-    "hash": "sha256-zwAshE2QQVk8/UbBklfCA37cbq/A61I4sTN9y/L/CNg=",
+    "hash": "sha256-oz3/DYjlnFlPYTLiQPZOT9rACac3Qcijd1t1prVNYZY=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
     },
@@ -224,12 +224,12 @@
       "mscorlib.wasm": "sha256-BeLfFpg9iS3DkEdywsYY7sV6ML3knqkMaMq0JBEbWlw=",
       "netstandard.wasm": "sha256-VkjUtJ6DK5bFTc2JwwGHmQY3tBcNSC7zMSJXuiXcnJA=",
       "System.Private.CoreLib.wasm": "sha256-VIQEPUSb48N39LR+ncGDP5xU02xuRbyZU8MhMho26wQ=",
-      "MyCourseApp.Shared.wasm": "sha256-bTCttDUKAHN1jfqTfYSh24yfCTzJq5r5h0lfaKWmvDQ=",
-      "MyCourseApp.Web.wasm": "sha256-tX+mF6JDjEMhdG12XzL2mY38Ku9SPUnMSfOe1Yhsvho="
+      "MyCourseApp.Shared.wasm": "sha256-/1zrZ1vLLHz5iysLQF0mEAeVMM+evLdGq8uL+DrjxTc=",
+      "MyCourseApp.Web.wasm": "sha256-ONBjJP2L57+BfP6uLk02n40VvFDkQyJ3HNYLLHMzWa4="
     },
     "pdb": {
-      "MyCourseApp.Shared.pdb": "sha256-xbyX1grS5Qx4xprkbFSEmfWHDDzDT2kU4jp8KcrDVIU=",
-      "MyCourseApp.Web.pdb": "sha256-PSYcnsSYY+wlj5MHk2IuA2CZJsmaBLQBaP2hatN/ZXE="
+      "MyCourseApp.Shared.pdb": "sha256-RPJfiVVoTwXVXkDq8zDp5HwkckvapaxjIaOf3KkBh3Y=",
+      "MyCourseApp.Web.pdb": "sha256-NadTRuaZzUGv9w1Up8O7qRs/Ri+1mSkE3O63Bth8peE="
     }
   },
   "cacheBootResources": true,

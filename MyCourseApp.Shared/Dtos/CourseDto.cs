@@ -14,6 +14,7 @@ namespace MyCourseApp.Shared.Dtos
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public double Rate { get; set; }
+
     }
 
 }

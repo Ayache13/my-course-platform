@@ -1,0 +1,384 @@
+﻿@page "/calendar"
+@inject CourseService CourseService
+@inject IJSRuntime JSRuntime
+@using MyCourseApp.Shared.Dtos
+@using System.Globalization
+@using MyCourseApp.Web.Models
+@using MyCourseApp.Web.Services
+
+<div class="calendar-page">
+    <div class="calendar-header">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="page-title mb-0">
+                <i class="bi bi-calendar3 me-2"></i> تقويم الدورات - @selectedYear
+            </h2>
+
+            <div class="d-flex align-items-center">
+                <div class="input-group me-3" style="width: 180px;">
+                    <select class="form-select" @onchange="OnYearChanged">
+                        @for (int y = DateTime.Now.Year - 2; y <= DateTime.Now.Year + 2; y++)
+                        {
+                            <option value="@y" selected="@(y == selectedYear)">@y</option>
+                        }
+                    </select>
+                </div>
+
+                <button class="btn btn-outline-secondary me-2" @onclick="() => ChangeYear(-1)">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+                <button class="btn btn-outline-secondary" @onclick="() => ChangeYear(1)">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="d-flex mb-3">
+            <div class="btn-group" role="group">
+                <button class="btn @(viewMode == "monthly" ? "btn-primary" : "btn-outline-primary")"
+                @onclick='() => ChangeViewMode("monthly")'>
+                    <i class="bi bi-calendar3 me-1"></i> عرض شهري
+                </button>
+                <button class="btn @(viewMode == "weekly" ? "btn-primary" : "btn-outline-primary")"
+                @onclick='() => ChangeViewMode("weekly")'>
+                    <i class="bi bi-calendar-week me-1"></i> عرض أسبوعي
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    @if (isLoading)
+    {
+        <div class="text-center py-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">جار التحميل...</span>
+            </div>
+            <p class="mt-3">جاري تحميل بيانات الدورات...</p>
+        </div>
+    }
+    else if (viewMode == "monthly")
+    {
+        <div class="monthly-view">
+            @for (int month = 1; month <= 12; month++)
+            {
+                <div class="month-section">
+                    <h3 class="month-title">
+                        @CultureInfo.GetCultureInfo("en-US").DateTimeFormat.GetMonthName(month)
+                    </h3>
+
+                    <div class="calendar-grid">
+                        <!-- Day names header -->
+                        <div class="day-names">
+                            @foreach (var dayName in GetShortDayNames())
+                            {
+                                <div class="day-name">@dayName</div>
+                            }
+                        </div>
+
+                        <!-- Calendar days -->
+                        @{
+                            var firstDayOfMonth = new DateTime(selectedYear, month, 1);
+                            var daysInMonth = DateTime.DaysInMonth(selectedYear, month);
+                            var startingDay = (int)firstDayOfMonth.DayOfWeek;
+
+                            // Adjust for Arabic culture (Sunday = 0)
+                            startingDay = startingDay == 0 ? 6 : startingDay - 1;
+                        }
+
+                        <div class="days-grid">
+                            <!-- Empty cells for days before the 1st of the month -->
+                            @for (int i = 0; i < startingDay; i++)
+                            {
+                                <div class="day-cell empty"></div>
+                            }
+
+                            <!-- Actual days of the month -->
+                            @for (int day = 1; day <= daysInMonth; day++)
+                            {
+                                var date = new DateTime(selectedYear, month, day);
+                                var hasCourses = calendarCourses.ContainsKey(date);
+                                var isToday = date.Date == DateTime.Today;
+
+                                <div class="day-cell @(isToday ? "today" : "") @(hasCourses ? "has-courses" : "")"
+                                @onclick="() => ShowDayDetails(date)">
+                                    <div class="day-number">@day</div>
+                                    @if (hasCourses)
+                                    {
+                                        <div class="courses-count">
+                                            <span class="badge bg-primary">@calendarCourses[date].Count</span>
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="weekly-view">
+            <!-- Weekly view implementation would go here -->
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle me-2"></i> العرض الأسبوعي قيد التطوير
+            </div>
+        </div>
+    }
+</div>
+
+<!-- Day Details Modal -->
+@if (showDayModal)
+{
+    <div class="modal fade show d-block" style="background-color: rgba(0,0,0,0.5)">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="bi bi-calendar3 me-2"></i>
+                        @selectedDay.ToString("dd MMMM yyyy", CultureInfo.GetCultureInfo("en - US"))
+                    </h5>
+                    <button type="button" class="btn-close" @onclick="CloseDayModal"></button>
+                </div>
+                <div class="modal-body">
+                    @if (calendarCourses.ContainsKey(selectedDay))
+                    {
+                        <div class="list-group">
+                            @foreach (var course in calendarCourses[selectedDay])
+                            {
+                                <div class="list-group-item">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="mb-1">@course.Title</h6>
+                                            <small class="text-muted">
+                                                @course.StartDate.ToString("hh:mm tt") - @course.EndDate.ToString("hh:mm tt")
+                                            </small>
+                                        </div>
+                                        <a href="/course/@course.Id" class="btn btn-sm btn-outline-primary">
+                                            <i class="bi bi-box-arrow-up-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-center py-4">
+                            <i class="bi bi-calendar-x fs-1 text-muted mb-3"></i>
+                            <p>لا توجد دورات في هذا اليوم</p>
+                        </div>
+                    }
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CloseDayModal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private int selectedYear = DateTime.Now.Year;
+    private List<Course> courses = new();
+    private Dictionary<DateTime, List<Course>> calendarCourses = new();
+    private bool isLoading = true;
+    private string viewMode = "monthly";
+    private bool showDayModal = false;
+    private DateTime selectedDay;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCoursesAsync();
+    }
+
+    private async Task LoadCoursesAsync()
+    {
+        isLoading = true;
+        try
+        {
+            courses = (await CourseService.GetAllCoursesAsync())?.ToList() ?? new();
+            BuildCalendar();
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeVoidAsync("console.error", ex.Message);
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void BuildCalendar()
+    {
+        calendarCourses.Clear();
+
+        foreach (var course in courses)
+        {
+            var current = course.StartDate.Date;
+            while (current <= course.EndDate.Date)
+            {
+                if (current.Year == selectedYear)
+                {
+                    if (!calendarCourses.ContainsKey(current))
+                        calendarCourses[current] = new List<Course>();
+
+                    calendarCourses[current].Add(course);
+                }
+                current = current.AddDays(1);
+            }
+        }
+    }
+
+    private async Task OnYearChanged(ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value?.ToString(), out var year))
+        {
+            selectedYear = year;
+            await LoadCoursesAsync();
+        }
+    }
+
+    private async Task ChangeYear(int delta)
+    {
+        selectedYear += delta;
+        await LoadCoursesAsync();
+    }
+
+    private void ChangeViewMode(string mode)
+    {
+        viewMode = mode;
+    }
+
+    private string[] GetShortDayNames()
+    {
+        var culture = CultureInfo.GetCultureInfo("en-US");
+        return culture.DateTimeFormat.AbbreviatedDayNames
+            .Skip(1) // Skip Sunday (first day in Arabic)
+            .Concat(culture.DateTimeFormat.AbbreviatedDayNames.Take(1))
+            .ToArray();
+    }
+
+    private void ShowDayDetails(DateTime date)
+    {
+        selectedDay = date;
+        showDayModal = true;
+    }
+
+    private void CloseDayModal()
+    {
+        showDayModal = false;
+    }
+}
+
+<style>
+    .calendar-page {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+
+    .page-title {
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+    .month-section {
+        margin-bottom: 3rem;
+    }
+
+    .month-title {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .calendar-grid {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .day-names {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        background-color: #f8f9fa;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .day-name {
+        padding: 0.75rem;
+        border-right: 1px solid #dee2e6;
+    }
+
+        .day-name:last-child {
+            border-right: none;
+        }
+
+    .days-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .day-cell {
+        min-height: 80px;
+        padding: 0.5rem;
+        border-right: 1px solid #dee2e6;
+        border-bottom: 1px solid #dee2e6;
+        background-color: white;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+        .day-cell:hover {
+            background-color: #f8f9fa;
+        }
+
+        .day-cell.empty {
+            background-color: #f8f9fa;
+        }
+
+        .day-cell.today {
+            background-color: #e7f5ff;
+        }
+
+        .day-cell.has-courses {
+            background-color: #f3f9ff;
+        }
+
+    .day-number {
+        font-weight: 500;
+        margin-bottom: 0.25rem;
+    }
+
+    .courses-count {
+        text-align: center;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+
+    .modal-content {
+        border: none;
+        border-radius: 10px;
+    }
+
+    @@media (max-width: 768px) {
+        .day-cell {
+            min-height: 60px;
+            padding: 0.25rem;
+        }
+
+        .day-name {
+            padding: 0.5rem;
+            font-size: 0.8rem;
+        }
+    }
+</style>
